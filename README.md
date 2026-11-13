@@ -1,6 +1,6 @@
 <div align="center">
 
-<img src="public/cinedheu-logo.svg" alt="CineDheu Logo" width="112" height="112" />
+<img src="public/assets/cinedheu-logo.svg" alt="CineDheu Logo" width="112" height="112" />
 
 # CineDheu
 
