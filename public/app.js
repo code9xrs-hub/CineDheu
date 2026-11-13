@@ -114,7 +114,9 @@ document.querySelectorAll(".qr-toggle__btn").forEach((btn) => {
       b.setAttribute("aria-selected", active ? "true" : "false");
     });
     document.querySelectorAll("[data-qr-panel]").forEach((panel) => {
-      panel.hidden = panel.getAttribute("data-qr-panel") !== target;
+      const show = panel.getAttribute("data-qr-panel") === target;
+      panel.hidden = !show;
+      panel.style.display = show ? "flex" : "none";
     });
   });
 });
