@@ -1,0 +1,117 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 880 420" width="880" height="420" fill="none">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="880" y2="420" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#12141C" />
+      <stop offset="1" stop-color="#08090D" />
+    </linearGradient>
+    <linearGradient id="cdBar" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#FF3B66" />
+      <stop offset="1" stop-color="#E50936" />
+    </linearGradient>
+    <linearGradient id="mlBar" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#38BDF8" />
+      <stop offset="1" stop-color="#0284C7" />
+    </linearGradient>
+    <linearGradient id="mbBar" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#94A3B8" />
+      <stop offset="1" stop-color="#475569" />
+    </linearGradient>
+  </defs>
+
+  <!-- Card Container -->
+  <rect x="1" y="1" width="878" height="418" rx="20" fill="url(#bg)" stroke="#FFFFFF" stroke-opacity="0.12" stroke-width="1.5" />
+
+  <!-- Title & Subtitle -->
+  <text x="36" y="44" fill="#F8FAFC" font-family="Inter, Segoe UI, system-ui, sans-serif" font-size="19" font-weight="800">CineDheu vs MovieLinkBD vs MovieBox</text>
+  <text x="36" y="66" fill="#94A3B8" font-family="Inter, Segoe UI, system-ui, sans-serif" font-size="12.5" font-weight="500">Capability &amp; Footprint Benchmark (Score out of 10 • Higher is Better)</text>
+
+  <!-- Legend -->
+  <g transform="translate(520, 32)">
+    <rect x="0" y="0" width="12" height="12" rx="3" fill="url(#cdBar)" />
+    <text x="18" y="10.5" fill="#F8FAFC" font-family="Inter, Segoe UI, system-ui, sans-serif" font-size="12" font-weight="700">CineDheu</text>
+
+    <rect x="98" y="0" width="12" height="12" rx="3" fill="url(#mlBar)" />
+    <text x="116" y="10.5" fill="#CBD5E1" font-family="Inter, Segoe UI, system-ui, sans-serif" font-size="12" font-weight="600">MovieLinkBD</text>
+
+    <rect x="216" y="0" width="12" height="12" rx="3" fill="url(#mbBar)" />
+    <text x="234" y="10.5" fill="#CBD5E1" font-family="Inter, Segoe UI, system-ui, sans-serif" font-size="12" font-weight="600">MovieBox</text>
+  </g>
+
+  <!-- Y-Axis Gridlines (y=340 is 0, y=120 is 10 => 22px per point) -->
+  <g stroke="#FFFFFF" stroke-opacity="0.08" stroke-width="1">
+    <line x1="68" y1="340" x2="844" y2="340" stroke-opacity="0.18" />
+    <line x1="68" y1="296" x2="844" y2="296" stroke-dasharray="4 4" />
+    <line x1="68" y1="252" x2="844" y2="252" stroke-dasharray="4 4" />
+    <line x1="68" y1="208" x2="844" y2="208" stroke-dasharray="4 4" />
+    <line x1="68" y1="164" x2="844" y2="164" stroke-dasharray="4 4" />
+    <line x1="68" y1="120" x2="844" y2="120" stroke-dasharray="4 4" />
+  </g>
+
+  <!-- Y-Axis Labels -->
+  <g fill="#64748B" font-family="Inter, Segoe UI, system-ui, sans-serif" font-size="11" font-weight="600" text-anchor="end">
+    <text x="56" y="344">0</text>
+    <text x="56" y="300">2</text>
+    <text x="56" y="256">4</text>
+    <text x="56" y="212">6</text>
+    <text x="56" y="168">8</text>
+    <text x="56" y="124">10</text>
+  </g>
+
+  <!-- Category 1: Ad-Free UX (10, 4, 5) -->
+  <g transform="translate(96, 0)">
+    <rect x="0" y="120" width="24" height="220" rx="6" fill="url(#cdBar)" />
+    <text x="12" y="112" fill="#FF6B8A" font-family="Inter, Segoe UI, system-ui, sans-serif" font-size="11" font-weight="700" text-anchor="middle">10</text>
+    <rect x="30" y="252" width="24" height="88" rx="6" fill="url(#mlBar)" />
+    <text x="42" y="244" fill="#7DD3FC" font-family="Inter, Segoe UI, system-ui, sans-serif" font-size="11" font-weight="600" text-anchor="middle">4</text>
+    <rect x="60" y="230" width="24" height="110" rx="6" fill="url(#mbBar)" />
+    <text x="72" y="222" fill="#CBD5E1" font-family="Inter, Segoe UI, system-ui, sans-serif" font-size="11" font-weight="600" text-anchor="middle">5</text>
+    <text x="42" y="366" fill="#E2E8F0" font-family="Inter, Segoe UI, system-ui, sans-serif" font-size="12" font-weight="600" text-anchor="middle">Ad-Free UX</text>
+  </g>
+
+  <!-- Category 2: Player & PiP (10, 5, 7) -->
+  <g transform="translate(248, 0)">
+    <rect x="0" y="120" width="24" height="220" rx="6" fill="url(#cdBar)" />
+    <text x="12" y="112" fill="#FF6B8A" font-family="Inter, Segoe UI, system-ui, sans-serif" font-size="11" font-weight="700" text-anchor="middle">10</text>
+    <rect x="30" y="230" width="24" height="110" rx="6" fill="url(#mlBar)" />
+    <text x="42" y="222" fill="#7DD3FC" font-family="Inter, Segoe UI, system-ui, sans-serif" font-size="11" font-weight="600" text-anchor="middle">5</text>
+    <rect x="60" y="186" width="24" height="154" rx="6" fill="url(#mbBar)" />
+    <text x="72" y="178" fill="#CBD5E1" font-family="Inter, Segoe UI, system-ui, sans-serif" font-size="11" font-weight="600" text-anchor="middle">7</text>
+    <text x="42" y="366" fill="#E2E8F0" font-family="Inter, Segoe UI, system-ui, sans-serif" font-size="12" font-weight="600" text-anchor="middle">Player &amp; PiP</text>
+  </g>
+
+  <!-- Category 3: Offline Queue (10, 4, 6) -->
+  <g transform="translate(400, 0)">
+    <rect x="0" y="120" width="24" height="220" rx="6" fill="url(#cdBar)" />
+    <text x="12" y="112" fill="#FF6B8A" font-family="Inter, Segoe UI, system-ui, sans-serif" font-size="11" font-weight="700" text-anchor="middle">10</text>
+    <rect x="30" y="252" width="24" height="88" rx="6" fill="url(#mlBar)" />
+    <text x="42" y="244" fill="#7DD3FC" font-family="Inter, Segoe UI, system-ui, sans-serif" font-size="11" font-weight="600" text-anchor="middle">4</text>
+    <rect x="60" y="208" width="24" height="132" rx="6" fill="url(#mbBar)" />
+    <text x="72" y="200" fill="#CBD5E1" font-family="Inter, Segoe UI, system-ui, sans-serif" font-size="11" font-weight="600" text-anchor="middle">6</text>
+    <text x="42" y="366" fill="#E2E8F0" font-family="Inter, Segoe UI, system-ui, sans-serif" font-size="12" font-weight="600" text-anchor="middle">Offline Queue</text>
+  </g>
+
+  <!-- Category 4: Light Footprint (10, 8, 4) -->
+  <g transform="translate(552, 0)">
+    <rect x="0" y="120" width="24" height="220" rx="6" fill="url(#cdBar)" />
+    <text x="12" y="112" fill="#FF6B8A" font-family="Inter, Segoe UI, system-ui, sans-serif" font-size="11" font-weight="700" text-anchor="middle">10</text>
+    <rect x="30" y="164" width="24" height="176" rx="6" fill="url(#mlBar)" />
+    <text x="42" y="156" fill="#7DD3FC" font-family="Inter, Segoe UI, system-ui, sans-serif" font-size="11" font-weight="600" text-anchor="middle">8</text>
+    <rect x="60" y="252" width="24" height="88" rx="6" fill="url(#mbBar)" />
+    <text x="72" y="244" fill="#CBD5E1" font-family="Inter, Segoe UI, system-ui, sans-serif" font-size="11" font-weight="600" text-anchor="middle">4</text>
+    <text x="42" y="366" fill="#E2E8F0" font-family="Inter, Segoe UI, system-ui, sans-serif" font-size="12" font-weight="600" text-anchor="middle">Light Size</text>
+  </g>
+
+  <!-- Category 5: Verified OTA (10, 2, 3) -->
+  <g transform="translate(704, 0)">
+    <rect x="0" y="120" width="24" height="220" rx="6" fill="url(#cdBar)" />
+    <text x="12" y="112" fill="#FF6B8A" font-family="Inter, Segoe UI, system-ui, sans-serif" font-size="11" font-weight="700" text-anchor="middle">10</text>
+    <rect x="30" y="296" width="24" height="44" rx="6" fill="url(#mlBar)" />
+    <text x="42" y="288" fill="#7DD3FC" font-family="Inter, Segoe UI, system-ui, sans-serif" font-size="11" font-weight="600" text-anchor="middle">2</text>
+    <rect x="60" y="274" width="24" height="66" rx="6" fill="url(#mbBar)" />
+    <text x="72" y="266" fill="#CBD5E1" font-family="Inter, Segoe UI, system-ui, sans-serif" font-size="11" font-weight="600" text-anchor="middle">3</text>
+    <text x="42" y="366" fill="#E2E8F0" font-family="Inter, Segoe UI, system-ui, sans-serif" font-size="12" font-weight="600" text-anchor="middle">Verified OTA</text>
+  </g>
+
+  <!-- Footer Note -->
+  <text x="440" y="398" fill="#64748B" font-family="Inter, Segoe UI, system-ui, sans-serif" font-size="10.5" text-anchor="middle">CineDheu v1.0.1 (~3.3 MB signed APK • 0 ads • SHA-256 verified GitHub OTA) vs typical web/ad-supported clients</text>
+</svg>
