@@ -65,15 +65,9 @@ A lightweight, native Android OTT streaming and offline media app crafted with a
 
 How **CineDheu** compares against **MovieLinkBD.com** and **MovieBox.ph** across core streaming, offline, and privacy capabilities (feature readiness score out of 10):
 
-```mermaid
-xychart-beta
-    title "CineDheu vs MovieLinkBD.com vs MovieBox.ph (Capability Score / 10)"
-    x-axis ["Ad-Free UX", "Native Player & PiP", "Offline Manager", "Lightweight Size", "Verified OTA"]
-    y-axis "Score (0 - 10)" 0 --> 10
-    bar "CineDheu" [10, 10, 10, 10, 10]
-    bar "MovieLinkBD.com" [4, 5, 4, 8, 2]
-    bar "MovieBox.ph" [5, 7, 6, 4, 3]
-```
+<p align="center">
+  <img src="public/assets/benchmark-chart.svg" alt="CineDheu vs MovieLinkBD vs MovieBox Benchmark Chart" width="100%" />
+</p>
 
 | Benchmark / Feature | CineDheu (Android App) | MovieLinkBD.com | MovieBox.ph |
 | :--- | :--- | :--- | :--- |
