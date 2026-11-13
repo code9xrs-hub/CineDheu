@@ -1,5 +1,7 @@
 <div align="center">
 
+<img src="public/cinedheu-logo.svg" alt="CineDheu Logo" width="112" height="112" />
+
 # CineDheu
 
 ### Stream Movies, Series & Anime Without Limits
@@ -12,7 +14,7 @@ A lightweight, native Android OTT streaming and offline media app crafted with a
 
 <br />
 
-[![Download CineDheu APK](https://img.shields.io/badge/⬇%20Download%20CineDheu%20APK-Latest%20Release-E50936?style=for-the-badge)](https://github.com/code9xrs-hub/CineDheu/releases/latest/download/app-release.apk)
+[![Download CineDheu APK](https://img.shields.io/badge/⬇%20Download%20CineDheu%20APK-Latest%20Release-E50936?style=for-the-badge)](https://github.com/code9xrs-hub/CineDheu/releases/latest/download/CineDheu-release.apk)
 &nbsp;&nbsp;
 [![View All Releases](https://img.shields.io/badge/View%20All%20Releases-GitHub-181B25?style=for-the-badge)](https://github.com/code9xrs-hub/CineDheu/releases)
 
@@ -27,7 +29,7 @@ A lightweight, native Android OTT streaming and offline media app crafted with a
 | **App Name** | CineDheu |
 | **Platform** | Android 8.0 (Oreo) and above |
 | **Latest Version** | `v1.0.0` |
-| **Download Format** | Signed Release APK (`app-release.apk`) |
+| **Download Format** | Signed Release APK (`CineDheu-release.apk`) |
 | **Account / Login** | Not required (100% private, zero account tracking) |
 | **Updates** | Built-in OTA updater via GitHub Releases (Stable & Beta channels) |
 
@@ -60,9 +62,10 @@ A lightweight, native Android OTT streaming and offline media app crafted with a
 
 ## How to Install
 
-1. Tap **[Download CineDheu APK](https://github.com/code9xrs-hub/CineDheu/releases/latest/download/app-release.apk)** above to get the latest `app-release.apk`.
+1. Tap **[Download CineDheu APK](https://github.com/code9xrs-hub/CineDheu/releases/latest/download/CineDheu-release.apk)** above to get the latest `CineDheu-release.apk`.
 2. Open the downloaded `.apk` file from your browser or file manager.
 3. If prompted by Android, allow **Install unknown apps** for your browser or file manager (and for CineDheu when installing future in-app updates).
 4. Tap **Install** and launch **CineDheu**.
 
-> **Integrity Check:** Every official release includes `app-release.apk.sha256` and `release.json` on the [Releases page](https://github.com/code9xrs-hub/CineDheu/releases) so you can verify your download before installing.
+> **Integrity Check:** Every official release includes `CineDheu-release.apk.sha256` and `release.json` on the [Releases page](https://github.com/code9xrs-hub/CineDheu/releases) so you can verify your download before installing.
+
