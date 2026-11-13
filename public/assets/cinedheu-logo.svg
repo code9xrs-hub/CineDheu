@@ -1,0 +1,29 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 108 108" width="108" height="108" fill="none">
+  <defs>
+    <radialGradient id="bgGrad" cx="54" cy="46" r="68" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#300916" />
+      <stop offset="0.55" stop-color="#12141C" />
+      <stop offset="1" stop-color="#08090D" />
+    </radialGradient>
+    <linearGradient id="arcGrad" x1="27" y1="39" x2="75" y2="31" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#FF4D73" />
+      <stop offset="0.65" stop-color="#E50936" />
+      <stop offset="1" stop-color="#E50936" stop-opacity="0" />
+    </linearGradient>
+    <linearGradient id="waveGrad" x1="27" y1="38" x2="81" y2="72" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#FF3B66" />
+      <stop offset="0.55" stop-color="#E50936" />
+      <stop offset="1" stop-color="#9B0422" />
+    </linearGradient>
+    <linearGradient id="crestGrad" x1="31" y1="49" x2="77" y2="35" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#FFFFFF" />
+      <stop offset="1" stop-color="#FFD6DF" />
+    </linearGradient>
+  </defs>
+  <rect width="108" height="108" rx="26" fill="url(#bgGrad)" />
+  <path d="M54,23A31,31 0,1 1,23 54A31,31 0,0 1,54 23Z" stroke="#FFFFFF" stroke-opacity="0.17" stroke-width="1.6" />
+  <path d="M27,39A31,31 0,0 1,75 31" stroke="url(#arcGrad)" stroke-width="2.6" stroke-linecap="round" />
+  <path d="M27,63 C35,40 47,36 56,50 C63,62 72,56 81,37 C79,64 65,78 49,69 C41,64 34,67 27,63 Z" fill="url(#waveGrad)" />
+  <path d="M31,49 C39,33 51,33 59,45 C65,53 72,49 77,35" stroke="url(#crestGrad)" stroke-width="3.2" stroke-linecap="round" />
+  <path d="M48,47 L61,54.5 L48,62 Z" fill="#FFFFFF" />
+</svg>
