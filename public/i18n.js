@@ -23,7 +23,7 @@ const TRANSLATIONS = {
     hero_subtitle:
       "CineDheu is a fast, native Android streaming and offline media app powered by Media3 ExoPlayer. Watch movies, series, and anime in crisp quality with Picture-in-Picture, multi-audio subtitles, and verified in-app updates.",
     hero_download: "Download CineDheu APK",
-    hero_all_releases: "All Releases",
+    hero_star_repo: "Star on GitHub",
     meta_version_label: "Version",
     meta_size_label: "APK Size",
     meta_req_label: "Requirement",
@@ -70,9 +70,6 @@ const TRANSLATIONS = {
       "CineDheu is 100% free, ad-free, and built with passion. If the app makes your movie nights better, buy us a coffee—every small contribution helps power faster updates and keep the experience smooth.",
     donate_bkash_caption: "bKash / Bangla QR — Scan to Send Money",
     donate_binance_caption: "Binance Pay — Scan with Binance App",
-    donate_supporters_label: "Supporters",
-    donate_week_label: "This Week",
-    donate_coffees_label: "Coffees Bought",
     footer_tag: "• Native Android OTT Client",
   },
   bn: {
@@ -86,7 +83,7 @@ const TRANSLATIONS = {
     hero_subtitle:
       "CineDheu হলো Media3 ExoPlayer চালিত একটি দ্রুত ও আধুনিক অ্যান্ড্রয়েড স্ট্রিমিং ও অফলাইন মিডিয়া অ্যাপ। মুভি, সিরিজ এবং অ্যানিমে দেখুন দারুণ কোয়ালিটিতে—PiP মোড, মাল্টি-অডিও, সাবটাইটেল ও ভেরিফায়েড আপডেটসহ।",
     hero_download: "CineDheu APK ডাউনলোড করুন",
-    hero_all_releases: "সকল রিলিজ",
+    hero_star_repo: "GitHub-এ স্টার দিন",
     meta_version_label: "ভার্সন",
     meta_size_label: "APK সাইজ",
     meta_req_label: "অ্যান্ড্রয়েড",
@@ -133,9 +130,6 @@ const TRANSLATIONS = {
       "CineDheu সম্পূর্ণ ফ্রি এবং বিজ্ঞাপনমুক্ত। অ্যাপটি আপনার ভালো লাগলে ছোট একটি অনুদান দিয়ে ডেভেলপমেন্ট ও সার্ভার চালু রাখতে সাহায্য করতে পারেন।",
     donate_bkash_caption: "বিকাশ / বাংলা QR — সেন্ড মানি করতে স্ক্যান করুন",
     donate_binance_caption: "Binance Pay — Binance অ্যাপ দিয়ে স্ক্যান করুন",
-    donate_supporters_label: "সহযোগী",
-    donate_week_label: "এই সপ্তাহে",
-    donate_coffees_label: "কফি সাপোর্ট",
     footer_tag: "• নেটিভ অ্যান্ড্রয়েড OTT ক্লায়েন্ট",
   },
   hi: {
@@ -149,7 +143,7 @@ const TRANSLATIONS = {
     hero_subtitle:
       "CineDheu, Media3 ExoPlayer पर आधारित एक तेज़ और आधुनिक Android स्ट्रीमिंग व ऑफ़लाइन मीडिया ऐप है। PiP, मल्टी-ऑडियो, सबटाइटल और वेरिफ़ाइड अपडेट्स के साथ मूवीज़, सीरीज़ और एनीमे देखें।",
     hero_download: "CineDheu APK डाउनलोड करें",
-    hero_all_releases: "सभी रिलीज़",
+    hero_star_repo: "GitHub पर स्टार दें",
     meta_version_label: "वर्ज़न",
     meta_size_label: "APK साइज़",
     meta_req_label: "एंड्रॉइड",
@@ -198,7 +192,7 @@ const TRANSLATIONS = {
     hero_subtitle:
       "CineDheu هو تطبيق بث وميديا أوفلاين سريع لأجهزة Android يعمل بمحرك Media3 ExoPlayer. شاهد الأفلام والمسلسلات والأنمي بجودة عالية مع نافذة PiP وترجمات متعددة.",
     hero_download: "تحميل CineDheu APK",
-    hero_all_releases: "جميع الإصدارات",
+    hero_star_repo: "نجمة على GitHub",
     meta_version_label: "الإصدار",
     meta_size_label: "حجم APK",
     meta_req_label: "المتطلب",
@@ -247,7 +241,7 @@ const TRANSLATIONS = {
     hero_subtitle:
       "CineDheu es una app nativa de streaming y descargas offline para Android impulsada por Media3 ExoPlayer. Disfruta películas, series y anime con PiP, subtítulos y actualizaciones verificadas.",
     hero_download: "Descargar CineDheu APK",
-    hero_all_releases: "Todas las Versiones",
+    hero_star_repo: "Dar Estrella en GitHub",
     meta_version_label: "Versión",
     meta_size_label: "Tamaño APK",
     meta_req_label: "Requisito",
@@ -296,7 +290,7 @@ const TRANSLATIONS = {
     hero_subtitle:
       "CineDheu est une application Android rapide de streaming et de lecture hors ligne propulsée par Media3 ExoPlayer. Regardez films, séries et animés en haute qualité avec PiP et sous-titres.",
     hero_download: "Télécharger CineDheu APK",
-    hero_all_releases: "Toutes les Versions",
+    hero_star_repo: "Mettre une Étoile",
     meta_version_label: "Version",
     meta_size_label: "Taille APK",
     meta_req_label: "Prérequis",
@@ -345,7 +339,7 @@ const TRANSLATIONS = {
     hero_subtitle:
       "CineDheu ist eine schnelle Android-Streaming- und Offline-App mit Media3 ExoPlayer. Filme, Serien und Anime in klarer Qualität mit PiP, Untertiteln und geprüften Updates.",
     hero_download: "CineDheu APK Herunterladen",
-    hero_all_releases: "Alle Releases",
+    hero_star_repo: "Auf GitHub Bewerten",
     meta_version_label: "Version",
     meta_size_label: "APK-Größe",
     meta_req_label: "System",
@@ -394,7 +388,7 @@ const TRANSLATIONS = {
     hero_subtitle:
       "CineDheu é um app Android rápido de streaming e mídia offline com Media3 ExoPlayer. Assista filmes, séries e animes com PiP, legendas e atualizações verificadas.",
     hero_download: "Baixar CineDheu APK",
-    hero_all_releases: "Todas as Versões",
+    hero_star_repo: "Dar Estrela no GitHub",
     meta_version_label: "Versão",
     meta_size_label: "Tamanho APK",
     meta_req_label: "Requisito",
@@ -443,7 +437,7 @@ const TRANSLATIONS = {
     hero_subtitle:
       "CineDheu adalah aplikasi streaming dan media offline Android yang cepat dengan Media3 ExoPlayer. Tonton film, serial, dan anime dengan PiP, subtitle multi-audio, dan update terverifikasi.",
     hero_download: "Unduh CineDheu APK",
-    hero_all_releases: "Semua Rilis",
+    hero_star_repo: "Beri Bintang di GitHub",
     meta_version_label: "Versi",
     meta_size_label: "Ukuran APK",
     meta_req_label: "Minimal",
@@ -492,7 +486,7 @@ const TRANSLATIONS = {
     hero_subtitle:
       "CineDheu, Media3 ExoPlayer destekli hızlı bir Android yayın ve çevrimdışı medya uygulamasıdır. PiP, çoklu ses, altyazı ve doğrulanmış güncellemelerle film, dizi ve anime izleyin.",
     hero_download: "CineDheu APK İndir",
-    hero_all_releases: "Tüm Sürümler",
+    hero_star_repo: "GitHub'da Yıldızla",
     meta_version_label: "Sürüm",
     meta_size_label: "APK Boyutu",
     meta_req_label: "Gereksinim",
