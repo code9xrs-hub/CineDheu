@@ -750,10 +750,15 @@ h1 {
 
 .donate-qr-card {
   width: 240px;
+  aspect-ratio: 4 / 5;
   max-width: 100%;
   padding: 10px;
   border-radius: 18px;
   background: #ffffff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
   box-shadow: 0 18px 42px rgba(226, 19, 110, 0.2), 0 0 0 1px rgba(255, 255, 255, 0.14);
 }
 
@@ -765,7 +770,8 @@ h1 {
 .donate-qr-img {
   display: block;
   width: 100%;
-  height: auto;
+  height: 100%;
+  object-fit: contain;
   border-radius: 12px;
 }
 
