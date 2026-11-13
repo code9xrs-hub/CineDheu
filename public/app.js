@@ -1,7 +1,7 @@
 const GITHUB_OWNER = "code9xrs-hub";
 const GITHUB_REPO = "CineDheu";
 const LATEST_RELEASE_API = `https://api.github.com/repos/${GITHUB_OWNER}/${GITHUB_REPO}/releases/latest`;
-const FALLBACK_DOWNLOAD_URL = `https://github.com/${GITHUB_OWNER}/${GITHUB_REPO}/releases/latest/download/app-release.apk`;
+const FALLBACK_DOWNLOAD_URL = `https://github.com/${GITHUB_OWNER}/${GITHUB_REPO}/releases/latest/download/CineDheu-release.apk`;
 
 function formatBytes(bytes) {
   if (!bytes || bytes <= 0) return "~3.3 MB";
@@ -40,6 +40,7 @@ async function loadLatestRelease() {
     const tag = release.tag_name || "v1.0.0";
     const assets = Array.isArray(release.assets) ? release.assets : [];
     const apkAsset =
+      assets.find((a) => a.name === "CineDheu-release.apk") ||
       assets.find((a) => a.name === "app-release.apk") ||
       assets.find((a) => a.name && a.name.endsWith(".apk"));
 
@@ -79,12 +80,12 @@ async function loadLatestRelease() {
 
     const digest = apkAsset?.digest?.replace(/^sha256:/i, "");
     if (shaEl) {
-      shaEl.textContent = digest || "Available in app-release.apk.sha256 on GitHub Releases";
+      shaEl.textContent = digest || "Available in CineDheu-release.apk.sha256 on GitHub Releases";
     }
   } catch (_) {
     setDownloadHref(FALLBACK_DOWNLOAD_URL);
     if (shaEl) {
-      shaEl.textContent = "See app-release.apk.sha256 on GitHub Releases";
+      shaEl.textContent = "See CineDheu-release.apk.sha256 on GitHub Releases";
     }
   }
 }
