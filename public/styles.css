@@ -682,12 +682,16 @@ h1 {
   display: flex;
   flex-direction: column;
   align-items: center;
+  width: 100%;
   gap: 16px;
 }
 
 .qr-toggle {
-  display: inline-flex;
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
   align-items: center;
+  width: 100%;
+  max-width: 276px;
   gap: 4px;
   padding: 4px;
   border-radius: 999px;
@@ -696,17 +700,23 @@ h1 {
 }
 
 .qr-toggle__btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
   border: 0;
   background: transparent;
   color: var(--text-secondary);
   font-family: inherit;
-  font-size: 0.84rem;
+  font-size: 0.85rem;
   font-weight: 700;
-  padding: 8px 16px;
-  min-height: 38px;
+  line-height: 1;
+  white-space: nowrap;
+  padding: 10px 14px;
+  min-height: 40px;
   border-radius: 999px;
   cursor: pointer;
-  transition: background-color 0.18s ease, color 0.18s ease, box-shadow 0.18s ease;
+  transition: background 0.18s ease, color 0.18s ease, box-shadow 0.18s ease;
 }
 
 .qr-toggle__btn:hover {
@@ -725,19 +735,22 @@ h1 {
   box-shadow: 0 6px 18px rgba(243, 186, 47, 0.3);
 }
 
-.donate-panel__qr[hidden] {
-  display: none;
-}
-
 .donate-panel__qr {
   display: flex;
   flex-direction: column;
   align-items: center;
   text-align: center;
+  width: 100%;
   gap: 10px;
 }
 
+.donate-panel__qr[hidden] {
+  display: none !important;
+}
+
 .donate-qr-card {
+  width: 240px;
+  max-width: 100%;
   padding: 10px;
   border-radius: 18px;
   background: #ffffff;
@@ -751,8 +764,7 @@ h1 {
 
 .donate-qr-img {
   display: block;
-  width: 220px;
-  max-width: 100%;
+  width: 100%;
   height: auto;
   border-radius: 12px;
 }
@@ -981,14 +993,18 @@ h1 {
     justify-content: center;
   }
 
-  .donate-qr-img {
-    width: 204px;
+  .donate-qr-card {
+    width: 224px;
+  }
+
+  .qr-toggle {
+    max-width: 260px;
   }
 
   .qr-toggle__btn {
     min-height: 40px;
-    padding: 8px 16px;
-    font-size: 0.86rem;
+    padding: 8px 12px;
+    font-size: 0.84rem;
   }
 
   .footer {
@@ -1012,8 +1028,8 @@ h1 {
     display: none;
   }
 
-  .donate-qr-img {
-    width: 200px;
+  .donate-qr-card {
+    width: 212px;
   }
 }
 
