@@ -57,19 +57,34 @@
       </a>
 
       <nav class="nav" aria-label="Primary navigation">
-        <a href="#features">Features</a>
-        <a href="#release">Release Info</a>
-        <a href="#install">Install Guide</a>
-        <a href="#donate">Support</a>
+        <a href="#features" data-i18n="nav_features">Features</a>
+        <a href="#release" data-i18n="nav_release">Release Info</a>
+        <a href="#install" data-i18n="nav_install">Install Guide</a>
+        <a href="#donate" data-i18n="nav_support">Support</a>
       </nav>
 
-      <a
-        id="nav-download-btn"
-        class="btn btn--primary btn--sm"
-        href="https://github.com/code9xrs-hub/CineDheu/releases/latest/download/CineDheu-release.apk"
-      >
-        Download APK
-      </a>
+      <div class="topbar__actions">
+        <select id="lang-select" class="lang-select" aria-label="Select language">
+          <option value="en">EN</option>
+          <option value="bn">বাংলা</option>
+          <option value="hi">हिन्दी</option>
+          <option value="ar">العربية</option>
+          <option value="es">ES</option>
+          <option value="fr">FR</option>
+          <option value="de">DE</option>
+          <option value="pt">PT</option>
+          <option value="id">ID</option>
+          <option value="tr">TR</option>
+        </select>
+        <a
+          id="nav-download-btn"
+          class="btn btn--primary btn--sm"
+          href="https://github.com/code9xrs-hub/CineDheu/releases/latest/download/CineDheu-release.apk"
+          data-i18n="nav_download"
+        >
+          Download APK
+        </a>
+      </div>
     </div>
   </header>
 
@@ -84,11 +99,11 @@
           </div>
 
           <h1>
-            Cinema in Your Pocket.<br />
-            <span class="text-accent">Zero Accounts.</span>
+            <span data-i18n="hero_title_1">Cinema in Your Pocket.</span><br />
+            <span class="text-accent" data-i18n="hero_title_2">Zero Accounts.</span>
           </h1>
 
-          <p class="hero__subtitle">
+          <p class="hero__subtitle" data-i18n="hero_subtitle">
             CineDheu is a fast, native Android streaming and offline media app powered by
             Media3 ExoPlayer. Watch movies, series, and anime in crisp quality with
             Picture-in-Picture, multi-audio subtitles, and verified in-app updates.
@@ -103,7 +118,7 @@
               <svg class="btn__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2">
                 <path d="M12 3v12m0 0l-4-4m4 4l4-4M4 17v2a2 2 0 002 2h12a2 2 0 002-2v-2" stroke-linecap="round" stroke-linejoin="round" />
               </svg>
-              <span>Download CineDheu APK</span>
+              <span data-i18n="hero_download">Download CineDheu APK</span>
             </a>
 
             <a
@@ -112,6 +127,7 @@
               href="https://github.com/code9xrs-hub/CineDheu/releases"
               target="_blank"
               rel="noopener noreferrer"
+              data-i18n="hero_all_releases"
             >
               All Releases
             </a>
@@ -119,20 +135,20 @@
 
           <div class="hero__meta">
             <div class="meta-chip">
-              <span class="meta-chip__label">Version</span>
+              <span class="meta-chip__label" data-i18n="meta_version_label">Version</span>
               <strong id="meta-version">v1.0.1</strong>
             </div>
             <div class="meta-chip">
-              <span class="meta-chip__label">APK Size</span>
+              <span class="meta-chip__label" data-i18n="meta_size_label">APK Size</span>
               <strong id="meta-size">~3.3 MB</strong>
             </div>
             <div class="meta-chip">
-              <span class="meta-chip__label">Requirement</span>
+              <span class="meta-chip__label" data-i18n="meta_req_label">Requirement</span>
               <strong>Android 8.0+</strong>
             </div>
             <div class="meta-chip">
-              <span class="meta-chip__label">Integrity</span>
-              <strong class="text-green">SHA-256 Verified</strong>
+              <span class="meta-chip__label" data-i18n="meta_integrity_label">Integrity</span>
+              <strong class="text-green" data-i18n="meta_integrity_val">SHA-256 Verified</strong>
             </div>
           </div>
         </div>
@@ -183,9 +199,9 @@
     <section id="features" class="section">
       <div class="container">
         <div class="section__head">
-          <span class="eyebrow">Built for Speed &amp; Comfort</span>
-          <h2>Everything You Need for Seamless Streaming</h2>
-          <p>
+          <span class="eyebrow" data-i18n="feat_eyebrow">Built for Speed &amp; Comfort</span>
+          <h2 data-i18n="feat_heading">Everything You Need for Seamless Streaming</h2>
+          <p data-i18n="feat_sub">
             Designed with a dark liquid-glass UI that stays responsive, light on battery, and
             effortless to navigate.
           </p>
@@ -194,8 +210,8 @@
         <div class="features-grid">
           <article class="glass-card">
             <div class="icon-badge">▶</div>
-            <h3>Theatre-Grade ExoPlayer</h3>
-            <p>
+            <h3 data-i18n="feat1_title">Theatre-Grade ExoPlayer</h3>
+            <p data-i18n="feat1_desc">
               Always-landscape playback with 480p to 1080p stream switching, auto-play next
               episode, and hardware-accelerated decoding.
             </p>
@@ -203,8 +219,8 @@
 
           <article class="glass-card">
             <div class="icon-badge">⧉</div>
-            <h3>Picture-in-Picture &amp; Gestures</h3>
-            <p>
+            <h3 data-i18n="feat2_title">Picture-in-Picture &amp; Gestures</h3>
+            <p data-i18n="feat2_desc">
               Minimize into a floating PiP window while browsing other apps, or swipe to adjust
               brightness, volume, and seek position.
             </p>
@@ -212,8 +228,8 @@
 
           <article class="glass-card">
             <div class="icon-badge">⬇</div>
-            <h3>Offline Download Manager</h3>
-            <p>
+            <h3 data-i18n="feat3_title">Offline Download Manager</h3>
+            <p data-i18n="feat3_desc">
               Save movies and episodes for offline playback with live Android notification
               progress plus Pause, Resume, and Cancel controls.
             </p>
@@ -221,8 +237,8 @@
 
           <article class="glass-card">
             <div class="icon-badge">★</div>
-            <h3>Rich Discovery &amp; Watchlist</h3>
-            <p>
+            <h3 data-i18n="feat4_title">Rich Discovery &amp; Watchlist</h3>
+            <p data-i18n="feat4_desc">
               Auto-sliding hero spotlight, fast search, TMDb-enriched cast &amp; ratings,
               Watchlist bookmarks, and Continue Watching sync.
             </p>
@@ -230,8 +246,8 @@
 
           <article class="glass-card">
             <div class="icon-badge">🛡</div>
-            <h3>Verified OTA Updates</h3>
-            <p>
+            <h3 data-i18n="feat5_title">Verified OTA Updates</h3>
+            <p data-i18n="feat5_desc">
               Built-in GitHub Releases updater with Stable &amp; Beta channels, SHA-256 digest
               checks, and signing certificate validation.
             </p>
@@ -239,8 +255,8 @@
 
           <article class="glass-card">
             <div class="icon-badge">✦</div>
-            <h3>Privacy First, Zero Accounts</h3>
-            <p>
+            <h3 data-i18n="feat6_title">Privacy First, Zero Accounts</h3>
+            <p data-i18n="feat6_desc">
               No sign-up walls, no personal tracking, and automatic offline-mode fallback when
               your internet connection drops.
             </p>
@@ -254,7 +270,7 @@
       <div class="container">
         <div class="release-panel glass-card">
           <div class="release-panel__info">
-            <span class="eyebrow">Official GitHub Release</span>
+            <span class="eyebrow" data-i18n="rel_eyebrow">Official GitHub Release</span>
             <h2 id="release-title">CineDheu v1.0.1</h2>
             <p id="release-date" class="release-panel__date">Published on GitHub Releases</p>
             <ul id="release-notes" class="release-notes">
@@ -277,6 +293,7 @@
               id="panel-download-btn"
               class="btn btn--primary btn--full"
               href="https://github.com/code9xrs-hub/CineDheu/releases/latest/download/CineDheu-release.apk"
+              data-i18n="rel_download_btn"
             >
               Download Verified APK
             </a>
@@ -289,25 +306,25 @@
     <section id="install" class="section">
       <div class="container">
         <div class="section__head">
-          <span class="eyebrow">Quick Setup</span>
-          <h2>Install in 3 Simple Steps</h2>
+          <span class="eyebrow" data-i18n="inst_eyebrow">Quick Setup</span>
+          <h2 data-i18n="inst_heading">Install in 3 Simple Steps</h2>
         </div>
 
         <div class="steps-grid">
           <div class="step-card glass-card">
             <span class="step-num">01</span>
-            <h3>Download the APK</h3>
-            <p>Tap any Download button on this page to get the signed <code>CineDheu-release.apk</code> directly from GitHub Releases.</p>
+            <h3 data-i18n="inst1_title">Download the APK</h3>
+            <p data-i18n="inst1_desc">Tap any Download button on this page to get the signed CineDheu-release.apk directly from GitHub Releases.</p>
           </div>
           <div class="step-card glass-card">
             <span class="step-num">02</span>
-            <h3>Allow App Install</h3>
-            <p>Open the downloaded file and allow <strong>Install unknown apps</strong> for your browser or file manager when Android prompts.</p>
+            <h3 data-i18n="inst2_title">Allow App Install</h3>
+            <p data-i18n="inst2_desc">Open the downloaded file and allow Install unknown apps for your browser or file manager when Android prompts.</p>
           </div>
           <div class="step-card glass-card">
             <span class="step-num">03</span>
-            <h3>Launch &amp; Stream</h3>
-            <p>Open CineDheu, explore the catalogue, and stay updated automatically from <strong>Settings → App Updates</strong>.</p>
+            <h3 data-i18n="inst3_title">Launch &amp; Stream</h3>
+            <p data-i18n="inst3_desc">Open CineDheu, explore the catalogue, and stay updated automatically from Settings → App Updates.</p>
           </div>
         </div>
       </div>
@@ -318,9 +335,9 @@
       <div class="container">
         <div class="donate-panel glass-card">
           <div class="donate-panel__content">
-            <span class="eyebrow">Support CineDheu</span>
-            <h2>Keep the Waves Rolling</h2>
-            <p class="donate-panel__lead">
+            <span class="eyebrow" data-i18n="donate_eyebrow">Support CineDheu</span>
+            <h2 data-i18n="donate_heading">Keep the Waves Rolling</h2>
+            <p class="donate-panel__lead" data-i18n="donate_lead">
               CineDheu is 100% free, ad-free, and built with passion. If the app makes your movie nights better, buy us a coffee—every small contribution helps power faster updates and keep the experience smooth.
             </p>
             <div class="donate-badges">
@@ -340,7 +357,7 @@
                   loading="lazy"
                 />
               </div>
-              <p class="donate-qr-caption"><strong>bKash / Bangla QR</strong><br />Scan to Send Money</p>
+              <p class="donate-qr-caption" data-i18n="donate_bkash_caption">bKash / Bangla QR — Scan to Send Money</p>
             </div>
 
             <div class="donate-panel__qr">
@@ -352,7 +369,7 @@
                   loading="lazy"
                 />
               </div>
-              <p class="donate-qr-caption"><strong>Binance Pay</strong><br />Scan with Binance App</p>
+              <p class="donate-qr-caption" data-i18n="donate_binance_caption">Binance Pay — Scan with Binance App</p>
             </div>
           </div>
         </div>
@@ -365,7 +382,7 @@
       <div class="footer__brand" style="display:inline-flex;align-items:center;gap:8px;">
         <img src="cinedheu-logo.svg" alt="" width="24" height="24" style="border-radius:6px;display:block;" />
         <strong>CineDheu</strong>
-        <span>• Native Android OTT Client</span>
+        <span data-i18n="footer_tag">• Native Android OTT Client</span>
       </div>
       <div class="footer__links">
         <a href="https://github.com/code9xrs-hub/CineDheu" target="_blank" rel="noopener noreferrer">GitHub</a>
@@ -374,6 +391,7 @@
     </div>
   </footer>
 
+  <script src="i18n.js"></script>
   <script src="app.js"></script>
 </body>
 </html>
