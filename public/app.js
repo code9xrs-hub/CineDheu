@@ -105,34 +105,19 @@ document.getElementById("copy-sha-btn")?.addEventListener("click", async (event)
   }
 });
 
-function initDonationCounter() {
-  const supportersEl = document.getElementById("donate-supporters-count");
-  const weekEl = document.getElementById("donate-week-count");
-  const coffeeEl = document.getElementById("donate-coffee-count");
-  if (!supportersEl || !weekEl || !coffeeEl) return;
-
-  const daysSinceLaunch = Math.max(0, Math.floor((Date.now() - Date.UTC(2026, 10, 1)) / 86400000));
-  const supportersTarget = 148 + daysSinceLaunch * 2;
-  const weekTarget = 24 + (daysSinceLaunch % 9);
-  const coffeeTarget = 310 + daysSinceLaunch * 4;
-
-  const animateCount = (el, target, suffix) => {
-    const duration = 900;
-    const start = performance.now();
-    const step = (now) => {
-      const progress = Math.min(1, (now - start) / duration);
-      const eased = 1 - Math.pow(1 - progress, 3);
-      el.textContent = `${Math.round(target * eased)}${suffix}`;
-      if (progress < 1) requestAnimationFrame(step);
-    };
-    requestAnimationFrame(step);
-  };
-
-  animateCount(supportersEl, supportersTarget, "+");
-  animateCount(weekEl, weekTarget, "");
-  animateCount(coffeeEl, coffeeTarget, "+");
-}
+document.querySelectorAll(".qr-toggle__btn").forEach((btn) => {
+  btn.addEventListener("click", () => {
+    const target = btn.getAttribute("data-qr-target");
+    document.querySelectorAll(".qr-toggle__btn").forEach((b) => {
+      const active = b === btn;
+      b.classList.toggle("is-active", active);
+      b.setAttribute("aria-selected", active ? "true" : "false");
+    });
+    document.querySelectorAll("[data-qr-panel]").forEach((panel) => {
+      panel.hidden = panel.getAttribute("data-qr-panel") !== target;
+    });
+  });
+});
 
 loadLatestRelease();
-initDonationCounter();
 
