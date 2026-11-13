@@ -603,7 +603,7 @@ h1 {
 /* Donation / Support Panel */
 .donate-panel {
   display: grid;
-  grid-template-columns: 1.35fr 0.85fr;
+  grid-template-columns: 1fr 1.1fr;
   align-items: center;
   gap: 28px;
   background: linear-gradient(135deg, rgba(229, 9, 54, 0.08), rgba(18, 20, 28, 0.94));
@@ -647,6 +647,19 @@ h1 {
   border-color: rgba(226, 19, 110, 0.55);
 }
 
+.donate-badge--binance {
+  color: #f3ba2f;
+  background: rgba(243, 186, 47, 0.14);
+  border-color: rgba(243, 186, 47, 0.48);
+}
+
+.donate-qr-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 16px;
+  align-items: start;
+}
+
 .donate-panel__qr {
   display: flex;
   flex-direction: column;
@@ -656,15 +669,20 @@ h1 {
 }
 
 .donate-qr-card {
-  padding: 10px;
+  padding: 8px;
   border-radius: 18px;
   background: #ffffff;
   box-shadow: 0 18px 42px rgba(226, 19, 110, 0.2), 0 0 0 1px rgba(255, 255, 255, 0.14);
 }
 
+.donate-qr-card--binance {
+  background: #1e2329;
+  box-shadow: 0 18px 42px rgba(243, 186, 47, 0.16), 0 0 0 1px rgba(243, 186, 47, 0.28);
+}
+
 .donate-qr-img {
   display: block;
-  width: 210px;
+  width: 180px;
   max-width: 100%;
   height: auto;
   border-radius: 12px;
@@ -672,6 +690,7 @@ h1 {
 
 .donate-qr-caption {
   font-size: 0.8rem;
+  line-height: 1.4;
   color: var(--text-secondary);
 }
 
@@ -865,8 +884,13 @@ h1 {
     justify-content: center;
   }
 
+  .donate-qr-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 12px;
+  }
+
   .donate-qr-img {
-    width: 196px;
+    width: 170px;
   }
 
   .footer {
@@ -882,6 +906,16 @@ h1 {
 
   .footer__links a {
     padding: 6px 8px;
+  }
+}
+
+@media (max-width: 440px) {
+  .donate-qr-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .donate-qr-img {
+    width: 200px;
   }
 }
 
