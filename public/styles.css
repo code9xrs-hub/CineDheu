@@ -654,35 +654,6 @@ h1 {
   gap: 8px;
 }
 
-.donate-stats {
-  display: grid;
-  grid-template-columns: repeat(3, minmax(0, 1fr));
-  gap: 10px;
-  margin-top: 18px;
-  max-width: 460px;
-}
-
-.donate-stat {
-  background: rgba(255, 255, 255, 0.04);
-  border: 1px solid var(--glass-border);
-  border-radius: 12px;
-  padding: 10px 12px;
-  display: flex;
-  flex-direction: column;
-  gap: 2px;
-}
-
-.donate-stat strong {
-  font-size: 1.08rem;
-  font-weight: 800;
-  color: #ffffff;
-}
-
-.donate-stat span {
-  font-size: 0.74rem;
-  color: var(--text-muted);
-}
-
 .donate-badge {
   display: inline-flex;
   align-items: center;
@@ -796,35 +767,69 @@ h1 {
   }
 
   .topbar__inner {
-    height: 62px;
-    gap: 12px;
+    height: 60px;
+    gap: 10px;
+  }
+
+  .brand {
+    gap: 8px;
+    min-width: 0;
   }
 
   .brand__crest {
-    width: 34px;
-    height: 34px;
+    width: 32px;
+    height: 32px;
+    flex-shrink: 0;
   }
 
   .brand__name {
-    font-size: 1.04rem;
+    font-size: 1rem;
   }
 
   .brand__tag {
-    font-size: 0.7rem;
+    font-size: 0.68rem;
   }
 
   .nav {
     display: none;
   }
 
+  .topbar__actions {
+    gap: 8px;
+    flex-shrink: 0;
+  }
+
+  .lang-select {
+    min-height: 38px;
+    padding: 6px 8px;
+    font-size: 0.78rem;
+    border-radius: 10px;
+  }
+
   .btn {
-    min-height: 44px;
+    min-height: 46px;
+    border-radius: 12px;
   }
 
   .btn--sm {
-    min-height: 40px;
-    padding: 8px 14px;
-    font-size: 0.84rem;
+    min-height: 38px;
+    padding: 8px 12px;
+    font-size: 0.8rem;
+    white-space: nowrap;
+  }
+
+  .btn--lg,
+  .btn--full {
+    width: 100%;
+    min-height: 48px;
+    padding: 12px 18px;
+    font-size: 0.95rem;
+  }
+
+  .copy-btn {
+    min-height: 34px;
+    padding: 6px 12px;
+    font-size: 0.8rem;
   }
 
   .hero {
@@ -856,14 +861,8 @@ h1 {
   .hero__actions {
     flex-direction: column;
     align-items: stretch;
-    gap: 11px;
+    gap: 10px;
     margin-bottom: 24px;
-  }
-
-  .hero__actions .btn--lg {
-    width: 100%;
-    padding: 13px 20px;
-    font-size: 0.96rem;
   }
 
   .meta-chip {
@@ -938,11 +937,6 @@ h1 {
     justify-content: center;
   }
 
-  .donate-stats {
-    margin-left: auto;
-    margin-right: auto;
-  }
-
   .donate-qr-grid {
     grid-template-columns: repeat(2, minmax(0, 1fr));
     gap: 12px;
@@ -969,6 +963,10 @@ h1 {
 }
 
 @media (max-width: 440px) {
+  .brand__tag {
+    display: none;
+  }
+
   .donate-qr-grid {
     grid-template-columns: 1fr;
   }
