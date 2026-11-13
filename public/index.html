@@ -8,14 +8,38 @@
     name="description"
     content="Download CineDheu for Android. A lightweight, privacy-first OTT streaming and offline download app with ExoPlayer, Picture-in-Picture, and verified GitHub OTA updates."
   />
-  <meta name="theme-color" content="#08090D" />
+    <meta name="theme-color" content="#08090D" />
+  <meta name="robots" content="index, follow" />
+  <meta name="keywords" content="CineDheu, Android OTT, movie streaming app, series, anime, offline downloads, ExoPlayer, APK download" />
+  <meta name="author" content="CineDheu" />
+
+  <!-- Favicon & App Icons -->
+  <link rel="icon" type="image/png" sizes="512x512" href="cinedheu-logo.png" />
+  <link rel="apple-touch-icon" sizes="512x512" href="cinedheu-logo.png" />
+
+  <!-- Open Graph / Social SEO -->
+  <meta property="og:type" content="website" />
+  <meta property="og:site_name" content="CineDheu" />
+  <meta property="og:title" content="CineDheu — Stream Movies, Series &amp; Anime on Android" />
+  <meta property="og:description" content="Download CineDheu for Android. A lightweight, privacy-first OTT streaming and offline download app with ExoPlayer, Picture-in-Picture, and verified GitHub OTA updates." />
+  <meta property="og:image" content="https://raw.githubusercontent.com/code9xrs-hub/CineDheu/main/public/cinedheu-logo.png" />
+  <meta property="og:image:type" content="image/png" />
+  <meta property="og:image:width" content="512" />
+  <meta property="og:image:height" content="512" />
+  <meta property="og:image:alt" content="CineDheu App Logo" />
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:title" content="CineDheu — Stream Movies, Series &amp; Anime on Android" />
+  <meta name="twitter:description" content="Download CineDheu for Android. Stream movies, series, and anime with ExoPlayer, offline downloads, and verified OTA updates." />
+  <meta name="twitter:image" content="https://raw.githubusercontent.com/code9xrs-hub/CineDheu/main/public/cinedheu-logo.png" />
+  <meta name="twitter:image:alt" content="CineDheu App Logo" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link
     href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
     rel="stylesheet"
   />
-  <link rel="icon" type="image/svg+xml" href="cinedheu-logo.svg" />
   <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
@@ -118,7 +142,7 @@
             <div class="phone-notch"></div>
             <div class="phone-screen">
               <div class="mock-topbar">
-                <span class="mock-logo">CineDheu</span>
+                <span class="mock-logo" style="display:inline-flex;align-items:center;gap:6px;"><img src="cinedheu-logo.svg" alt="" width="18" height="18" style="border-radius:5px;display:block;" />CineDheu</span>
                 <div class="mock-icons">
                   <span class="mock-circle"></span>
                   <span class="mock-circle"></span>
@@ -291,7 +315,8 @@
 
   <footer class="footer">
     <div class="container footer__inner">
-      <div class="footer__brand">
+      <div class="footer__brand" style="display:inline-flex;align-items:center;gap:8px;">
+        <img src="cinedheu-logo.svg" alt="" width="24" height="24" style="border-radius:6px;display:block;" />
         <strong>CineDheu</strong>
         <span>• Native Android OTT Client</span>
       </div>
