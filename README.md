@@ -58,6 +58,25 @@ A lightweight, native Android OTT streaming and offline media app crafted with a
 - **Stable & Beta Channels**: Stay on Stable releases or opt into Beta previews anytime.
 - **SHA-256 & Signing Verification**: Every downloaded update APK is verified against its release SHA-256 checksum and app signing certificate before installation.
 
+
+---
+
+## Comparison & Benchmark
+
+How **CineDheu** stacks up against **MovieLinkBD.com** and **MovieBox.ph** across everyday streaming, offline downloads, and user experience:
+
+| Benchmark / Feature | CineDheu (Android App) | MovieLinkBD.com | MovieBox.ph |
+| :--- | :--- | :--- | :--- |
+| **Platform** | Native Android APK (Jetpack Compose + Media3) | Mobile / Desktop Web Browser | Mobile App / Web |
+| **Install Footprint** | **~3.3 MB** lightweight signed APK | Browser-based (no native offline shell) | Larger multi-bundle app (~30–60+ MB) |
+| **Ads & Pop-up Redirects** | **Zero ads, zero pop-ups** | Ad banners & redirect links | In-app ads / promo prompts |
+| **Account / Login** | **Not required** (zero sign-up walls) | Not required | Often prompts login / VIP tiers |
+| **Video Player** | **Built-in Media3 ExoPlayer** (480p–1080p, gestures, auto-next) | Browser / external player handoff | Built-in player |
+| **Picture-in-Picture (PiP)** | **Native floating PiP window** | Browser dependent | Limited / device dependent |
+| **Offline Download Manager** | **In-app queue** with notification Pause / Resume / Cancel | Direct browser file download only | In-app download (ad/tier gated) |
+| **Auto Offline Fallback** | **Automatic offline library routing** when internet drops | Unavailable offline | Limited offline cache |
+| **Updates & Integrity** | **Verified GitHub OTA** (SHA-256 + signing check) | N/A (website) | Manual / third-party APK updates |
+
 ---
 
 ## How to Install
