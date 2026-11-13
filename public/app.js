@@ -121,5 +121,23 @@ document.querySelectorAll(".qr-toggle__btn").forEach((btn) => {
   });
 });
 
+async function loadRepoStars() {
+  const countEl = document.getElementById("github-star-count");
+  if (!countEl) return;
+  try {
+    const res = await fetch(`https://api.github.com/repos/${GITHUB_OWNER}/${GITHUB_REPO}`, {
+      headers: { Accept: "application/vnd.github+json" },
+    });
+    if (!res.ok) return;
+    const repo = await res.json();
+    if (typeof repo.stargazers_count === "number") {
+      countEl.textContent = repo.stargazers_count.toLocaleString();
+    }
+  } catch (_) {
+    // Keep default count if rate-limited or offline
+  }
+}
+
 loadLatestRelease();
+loadRepoStars();
 
