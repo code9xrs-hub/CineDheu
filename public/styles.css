@@ -219,6 +219,23 @@ a {
   height: 19px;
 }
 
+.btn__icon--star {
+  color: var(--gold);
+}
+
+.star-count {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 2px 8px;
+  border-radius: 999px;
+  font-size: 0.78rem;
+  font-weight: 700;
+  background: rgba(245, 197, 24, 0.14);
+  color: var(--gold);
+  border: 1px solid rgba(245, 197, 24, 0.35);
+}
+
 /* Hero */
 .hero {
   padding: 68px 0 46px;
