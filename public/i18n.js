@@ -70,6 +70,9 @@ const TRANSLATIONS = {
       "CineDheu is 100% free, ad-free, and built with passion. If the app makes your movie nights better, buy us a coffee—every small contribution helps power faster updates and keep the experience smooth.",
     donate_bkash_caption: "bKash / Bangla QR — Scan to Send Money",
     donate_binance_caption: "Binance Pay — Scan with Binance App",
+    donate_supporters_label: "Supporters",
+    donate_week_label: "This Week",
+    donate_coffees_label: "Coffees Bought",
     footer_tag: "• Native Android OTT Client",
   },
   bn: {
@@ -130,6 +133,9 @@ const TRANSLATIONS = {
       "CineDheu সম্পূর্ণ ফ্রি এবং বিজ্ঞাপনমুক্ত। অ্যাপটি আপনার ভালো লাগলে ছোট একটি অনুদান দিয়ে ডেভেলপমেন্ট ও সার্ভার চালু রাখতে সাহায্য করতে পারেন।",
     donate_bkash_caption: "বিকাশ / বাংলা QR — সেন্ড মানি করতে স্ক্যান করুন",
     donate_binance_caption: "Binance Pay — Binance অ্যাপ দিয়ে স্ক্যান করুন",
+    donate_supporters_label: "সহযোগী",
+    donate_week_label: "এই সপ্তাহে",
+    donate_coffees_label: "কফি সাপোর্ট",
     footer_tag: "• নেটিভ অ্যান্ড্রয়েড OTT ক্লায়েন্ট",
   },
   hi: {
@@ -597,3 +603,4 @@ document.getElementById("lang-select")?.addEventListener("change", (event) => {
 });
 
 detectCountryLanguage();
+
