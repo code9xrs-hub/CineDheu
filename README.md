@@ -28,7 +28,7 @@ A lightweight, native Android OTT streaming and offline media app crafted with a
 | :--- | :--- |
 | **App Name** | CineDheu |
 | **Platform** | Android 8.0 (Oreo) and above |
-| **Latest Version** | `v1.0.0` |
+| **Latest Version** | `v1.0.1` |
 | **Download Format** | Signed Release APK (`CineDheu-release.apk`) |
 | **Account / Login** | Not required (100% private, zero account tracking) |
 | **Updates** | Built-in OTA updater via GitHub Releases (Stable & Beta channels) |
