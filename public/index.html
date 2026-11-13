@@ -345,25 +345,31 @@
               <span class="donate-badge donate-badge--binance">Binance Pay</span>
               <span class="donate-badge">Bangla QR Supported</span>
             </div>
-
-            <div class="donate-stats" aria-label="Community support stats">
-              <div class="donate-stat">
-                <strong id="donate-supporters-count">148+</strong>
-                <span data-i18n="donate_supporters_label">Supporters</span>
-              </div>
-              <div class="donate-stat">
-                <strong id="donate-week-count">24</strong>
-                <span data-i18n="donate_week_label">This Week</span>
-              </div>
-              <div class="donate-stat">
-                <strong id="donate-coffee-count">310+</strong>
-                <span data-i18n="donate_coffees_label">Coffees Bought</span>
-              </div>
-            </div>
           </div>
 
-          <div class="donate-qr-grid">
-            <div class="donate-panel__qr">
+          <div class="donate-qr-box">
+            <div class="qr-toggle" role="tablist" aria-label="Select Donation QR">
+              <button
+                type="button"
+                class="qr-toggle__btn is-active"
+                data-qr-target="bangla"
+                role="tab"
+                aria-selected="true"
+              >
+                Bangla QR
+              </button>
+              <button
+                type="button"
+                class="qr-toggle__btn"
+                data-qr-target="binance"
+                role="tab"
+                aria-selected="false"
+              >
+                Binance QR
+              </button>
+            </div>
+
+            <div class="donate-panel__qr" data-qr-panel="bangla">
               <div class="donate-qr-card">
                 <img
                   src="donate-qr.jpg"
@@ -375,7 +381,7 @@
               <p class="donate-qr-caption" data-i18n="donate_bkash_caption">bKash / Bangla QR — Scan to Send Money</p>
             </div>
 
-            <div class="donate-panel__qr">
+            <div class="donate-panel__qr" data-qr-panel="binance" hidden>
               <div class="donate-qr-card donate-qr-card--binance">
                 <img
                   src="donate-binance-qr.jpg"
