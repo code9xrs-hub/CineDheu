@@ -79,7 +79,7 @@
         <a
           id="nav-download-btn"
           class="btn btn--primary btn--sm"
-          href="https://github.com/code9xrs-hub/CineDheu/releases/latest/download/CineDheu-release.apk"
+          href="https://github.com/code9xrs-hub/CineDheu/releases/latest/download/app-release.apk"
           data-i18n="nav_download"
         >
           Download APK
@@ -113,7 +113,7 @@
             <a
               id="hero-download-btn"
               class="btn btn--primary btn--lg"
-              href="https://github.com/code9xrs-hub/CineDheu/releases/latest/download/CineDheu-release.apk"
+              href="https://github.com/code9xrs-hub/CineDheu/releases/latest/download/app-release.apk"
             >
               <svg class="btn__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2">
                 <path d="M12 3v12m0 0l-4-4m4 4l4-4M4 17v2a2 2 0 002 2h12a2 2 0 002-2v-2" stroke-linecap="round" stroke-linejoin="round" />
@@ -136,11 +136,11 @@
           <div class="hero__meta">
             <div class="meta-chip">
               <span class="meta-chip__label" data-i18n="meta_version_label">Version</span>
-              <strong id="meta-version">v1.0.1</strong>
+              <strong id="meta-version">v1.0.3</strong>
             </div>
             <div class="meta-chip">
               <span class="meta-chip__label" data-i18n="meta_size_label">APK Size</span>
-              <strong id="meta-size">~3.3 MB</strong>
+              <strong id="meta-size">~4.77 MB</strong>
             </div>
             <div class="meta-chip">
               <span class="meta-chip__label" data-i18n="meta_req_label">Requirement</span>
@@ -211,36 +211,63 @@
           <article class="glass-card">
             <div class="icon-badge">▶</div>
             <h3 data-i18n="feat1_title">Theatre-Grade ExoPlayer</h3>
-            <p data-i18n="feat1_desc">
-              Always-landscape playback with 480p to 1080p stream switching, auto-play next
-              episode, and hardware-accelerated decoding.
+            <p>
+              Always-landscape playback with 480p to 1080p stream switching, adaptive smart
+              preloading (up to 5 min buffer), rounded seek bar, and hardware decoding.
             </p>
           </article>
 
           <article class="glass-card">
-            <div class="icon-badge">⧉</div>
-            <h3 data-i18n="feat2_title">Picture-in-Picture &amp; Gestures</h3>
-            <p data-i18n="feat2_desc">
-              Minimize into a floating PiP window while browsing other apps, or swipe to adjust
-              brightness, volume, and seek position.
+            <div class="icon-badge">🌊</div>
+            <h3>Dheu AI App Assistant</h3>
+            <p>
+              Built-in AI guide with an animated wave mascot, voice typing, Bengali &amp; English
+              support, and a 19-category user-facing knowledge system.
             </p>
           </article>
 
           <article class="glass-card">
-            <div class="icon-badge">⬇</div>
-            <h3 data-i18n="feat3_title">Offline Download Manager</h3>
-            <p data-i18n="feat3_desc">
-              Save movies and episodes for offline playback with live Android notification
-              progress plus Pause, Resume, and Cancel controls.
+            <div class="icon-badge">🎙</div>
+            <h3>Voice Search &amp; Stable Details</h3>
+            <p>
+              Hands-free voice search that auto-submits when speech completes, recent search
+              chips, and stable detail-page metadata without image flickering.
             </p>
           </article>
 
           <article class="glass-card">
-            <div class="icon-badge">★</div>
-            <h3 data-i18n="feat4_title">Rich Discovery &amp; Watchlist</h3>
-            <p data-i18n="feat4_desc">
-              Auto-sliding hero spotlight, fast search, TMDb-enriched cast &amp; ratings,
-              Watchlist bookmarks, and Continue Watching sync.
+            <div class="icon-badge">📺</div>
+            <h3>Mobile + Android TV &amp; Fire TV</h3>
+            <p>
+              One APK adapts automatically to Android TV, Google TV, and Fire TV with a left
+              navigation rail, 5/6-column grids, and smooth zoom-in D-pad remote focus.
+            </p>
+          </article>
+
+          <article class="glass-card">
+            <div class="icon-badge">📡</div>
+            <h3>Google Cast SDK Playback</h3>
+            <p>
+              Cast movies and series to Chromecast and Google TV with auto-connect, remote
+              Play/Pause/Seek controls, and seamless resume on disconnect.
+            </p>
+          </article>
+
+          <article class="glass-card">
+            <div class="icon-badge">💾</div>
+            <h3>Offline Backup &amp; Restore</h3>
+            <p>
+              Export and import Watchlist, Continue Watching, Search History, and Preferences
+              locally as JSON with Safe Merge and duplicate protection.
+            </p>
+          </article>
+
+          <article class="glass-card">
+            <div class="icon-badge">⚙</div>
+            <h3>Multi-Page Settings &amp; Subtitles</h3>
+            <p>
+              Organized Settings subpages for Playback, live Subtitle Studio (size, color &amp;
+              edge preview), Downloads, Updates, and Support CineDheu.
             </p>
           </article>
 
@@ -265,18 +292,110 @@
       </div>
     </section>
 
+    <!-- Comparison & Benchmark -->
+    <section id="benchmark" class="section section--compact">
+      <div class="container">
+        <div class="section__head">
+          <span class="eyebrow">Comparison &amp; Benchmark</span>
+          <h2>CineDheu v1.0.3 vs Others</h2>
+          <p>
+            Unified Mobile + Android TV Jetpack Compose build with Google Cast, Dheu AI, offline
+            JSON backup, encrypted endpoints, and zero-ad playback.
+          </p>
+        </div>
+
+        <div class="glass-card" style="padding: 20px; margin-bottom: 18px;">
+          <img
+            src="assets/benchmark-chart.svg"
+            alt="CineDheu v1.0.3 vs MovieLinkBD vs MovieBox Comparison & Benchmark Chart"
+            style="width: 100%; height: auto; display: block; border-radius: 14px;"
+          />
+        </div>
+
+        <div class="glass-card" style="padding: 20px; margin-bottom: 18px; overflow-x: auto;">
+          <table style="width: 100%; border-collapse: collapse; font-size: 0.92rem; text-align: left;">
+            <thead>
+              <tr style="border-bottom: 1px solid rgba(255,255,255,0.12); color: #94A3B8;">
+                <th style="padding: 12px 10px;">Feature</th>
+                <th style="padding: 12px 10px; color: #FF4D73;">CineDheu v1.0.3</th>
+                <th style="padding: 12px 10px;">MovieLinkBD</th>
+                <th style="padding: 12px 10px;">MovieBox</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr style="border-bottom: 1px solid rgba(255,255,255,0.06);">
+                <td style="padding: 11px 10px; font-weight: 600;">Mobile + Android TV &amp; Fire TV Remote</td>
+                <td style="padding: 11px 10px; color: #10B981; font-weight: 600;">Yes (Adaptive Rail + D-Pad Zoom)</td>
+                <td style="padding: 11px 10px; color: #94A3B8;">No</td>
+                <td style="padding: 11px 10px; color: #94A3B8;">Partial</td>
+              </tr>
+              <tr style="border-bottom: 1px solid rgba(255,255,255,0.06);">
+                <td style="padding: 11px 10px; font-weight: 600;">Google Cast SDK (Remote Play/Pause/Seek)</td>
+                <td style="padding: 11px 10px; color: #10B981; font-weight: 600;">Yes (Auto-Connect + Sync)</td>
+                <td style="padding: 11px 10px; color: #94A3B8;">No</td>
+                <td style="padding: 11px 10px; color: #94A3B8;">Basic</td>
+              </tr>
+              <tr style="border-bottom: 1px solid rgba(255,255,255,0.06);">
+                <td style="padding: 11px 10px; font-weight: 600;">Offline Backup &amp; Restore (JSON)</td>
+                <td style="padding: 11px 10px; color: #10B981; font-weight: 600;">Yes (Export + Safe Merge)</td>
+                <td style="padding: 11px 10px; color: #94A3B8;">No</td>
+                <td style="padding: 11px 10px; color: #94A3B8;">Account Cloud Only</td>
+              </tr>
+              <tr style="border-bottom: 1px solid rgba(255,255,255,0.06);">
+                <td style="padding: 11px 10px; font-weight: 600;">Dheu AI App Assistant &amp; Voice Search</td>
+                <td style="padding: 11px 10px; color: #10B981; font-weight: 600;">Yes (EN + BN + Animated Ears)</td>
+                <td style="padding: 11px 10px; color: #94A3B8;">No</td>
+                <td style="padding: 11px 10px; color: #94A3B8;">No</td>
+              </tr>
+              <tr style="border-bottom: 1px solid rgba(255,255,255,0.06);">
+                <td style="padding: 11px 10px; font-weight: 600;">Ad-Free &amp; Zero Accounts</td>
+                <td style="padding: 11px 10px; color: #10B981; font-weight: 600;">100% Ad-Free</td>
+                <td style="padding: 11px 10px; color: #94A3B8;">Ad-Supported</td>
+                <td style="padding: 11px 10px; color: #94A3B8;">Ads / Prompts</td>
+              </tr>
+              <tr>
+                <td style="padding: 11px 10px; font-weight: 600;">Signed APK &amp; SHA-256 OTA</td>
+                <td style="padding: 11px 10px; color: #10B981; font-weight: 600;">4.77 MB (Verified OTA)</td>
+                <td style="padding: 11px 10px; color: #94A3B8;">Manual</td>
+                <td style="padding: 11px 10px; color: #94A3B8;">Larger Bundle</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
+        <div class="hero__meta" style="justify-content: center;">
+          <div class="meta-chip">
+            <span class="meta-chip__label">Signed Release APK</span>
+            <strong>4.77 MB</strong>
+          </div>
+          <div class="meta-chip">
+            <span class="meta-chip__label">Smart Preload Buffer</span>
+            <strong>Up to 5 min</strong>
+          </div>
+          <div class="meta-chip">
+            <span class="meta-chip__label">Dheu AI Guide</span>
+            <strong>19 Categories</strong>
+          </div>
+          <div class="meta-chip">
+            <span class="meta-chip__label">Ads &amp; Trackers</span>
+            <strong class="text-green">0 (Ad-Free)</strong>
+          </div>
+        </div>
+      </div>
+    </section>
+
     <!-- Live Release Info & Checksum -->
     <section id="release" class="section section--compact">
       <div class="container">
         <div class="release-panel glass-card">
           <div class="release-panel__info">
             <span class="eyebrow" data-i18n="rel_eyebrow">Official GitHub Release</span>
-            <h2 id="release-title">CineDheu v1.0.1</h2>
+            <h2 id="release-title">CineDheu v1.0.3</h2>
             <p id="release-date" class="release-panel__date">Published on GitHub Releases</p>
             <ul id="release-notes" class="release-notes">
-              <li>Theatre-grade Media3 ExoPlayer with PiP and multi-audio subtitle support.</li>
-              <li>Offline download manager with notification Pause/Resume/Cancel controls.</li>
-              <li>Built-in GitHub Releases OTA updater with SHA-256 &amp; signing verification.</li>
+              <li>Full Android TV, Google TV &amp; Fire TV adaptive UI with zoom-in D-pad remote focus.</li>
+              <li>Google Cast SDK support with auto-connect and remote Play, Pause, Seek &amp; Disconnect.</li>
+              <li>Offline Export/Import JSON backup, animated Dheu AI ears, circular seek thumb &amp; performance boost.</li>
             </ul>
           </div>
 
@@ -292,7 +411,7 @@
             <a
               id="panel-download-btn"
               class="btn btn--primary btn--full"
-              href="https://github.com/code9xrs-hub/CineDheu/releases/latest/download/CineDheu-release.apk"
+              href="https://github.com/code9xrs-hub/CineDheu/releases/latest/download/app-release.apk"
               data-i18n="rel_download_btn"
             >
               Download Verified APK
@@ -314,7 +433,7 @@
           <div class="step-card glass-card">
             <span class="step-num">01</span>
             <h3 data-i18n="inst1_title">Download the APK</h3>
-            <p data-i18n="inst1_desc">Tap any Download button on this page to get the signed CineDheu-release.apk directly from GitHub Releases.</p>
+            <p data-i18n="inst1_desc">Tap any Download button on this page to get the signed app-release.apk directly from GitHub Releases.</p>
           </div>
           <div class="step-card glass-card">
             <span class="step-num">02</span>

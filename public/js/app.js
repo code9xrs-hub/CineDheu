@@ -1,10 +1,10 @@
 const GITHUB_OWNER = "code9xrs-hub";
 const GITHUB_REPO = "CineDheu";
 const LATEST_RELEASE_API = `https://api.github.com/repos/${GITHUB_OWNER}/${GITHUB_REPO}/releases/latest`;
-const FALLBACK_DOWNLOAD_URL = `https://github.com/${GITHUB_OWNER}/${GITHUB_REPO}/releases/latest/download/CineDheu-release.apk`;
+const FALLBACK_DOWNLOAD_URL = `https://github.com/${GITHUB_OWNER}/${GITHUB_REPO}/releases/latest/download/app-release.apk`;
 
 function formatBytes(bytes) {
-  if (!bytes || bytes <= 0) return "~3.3 MB";
+  if (!bytes || bytes <= 0) return "~4.77 MB";
   const mb = bytes / (1024 * 1024);
   return mb >= 1024 ? `${(mb / 1024).toFixed(2)} GB` : `${mb.toFixed(2)} MB`;
 }
@@ -37,11 +37,11 @@ async function loadLatestRelease() {
     if (!res.ok) throw new Error(`HTTP ${res.status}`);
     const release = await res.json();
 
-    const tag = release.tag_name || "v1.0.0";
+    const tag = release.tag_name || "v1.0.3";
     const assets = Array.isArray(release.assets) ? release.assets : [];
     const apkAsset =
-      assets.find((a) => a.name === "CineDheu-release.apk") ||
       assets.find((a) => a.name === "app-release.apk") ||
+      assets.find((a) => a.name === "CineDheu-release.apk") ||
       assets.find((a) => a.name && a.name.endsWith(".apk"));
 
     const downloadUrl = apkAsset?.browser_download_url || FALLBACK_DOWNLOAD_URL;
@@ -80,12 +80,12 @@ async function loadLatestRelease() {
 
     const digest = apkAsset?.digest?.replace(/^sha256:/i, "");
     if (shaEl) {
-      shaEl.textContent = digest || "Available in CineDheu-release.apk.sha256 on GitHub Releases";
+      shaEl.textContent = digest || "Available in app-release.apk.sha256 on GitHub Releases";
     }
   } catch (_) {
     setDownloadHref(FALLBACK_DOWNLOAD_URL);
     if (shaEl) {
-      shaEl.textContent = "See CineDheu-release.apk.sha256 on GitHub Releases";
+      shaEl.textContent = "See app-release.apk.sha256 on GitHub Releases";
     }
   }
 }
