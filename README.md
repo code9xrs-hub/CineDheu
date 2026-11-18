@@ -1,5 +1,7 @@
 <div align="center">
 
+<img src="public/assets/cinedheu-logo.svg" alt="CineDheu App Logo" width="110" />
+
 # CineDheu
 
 ### Stream Movies, Series & Anime Without Limits
