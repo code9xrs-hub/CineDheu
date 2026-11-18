@@ -96,13 +96,31 @@ document.getElementById("copy-sha-btn")?.addEventListener("click", async (event)
   try {
     await navigator.clipboard.writeText(shaText);
     const btn = event.currentTarget;
-    btn.textContent = "Copied";
+    const t = window.__cinedheuGetDict ? window.__cinedheuGetDict() : null;
+    btn.textContent = t?.rel_copied || "Copied";
     setTimeout(() => {
-      btn.textContent = "Copy";
+      const latestT = window.__cinedheuGetDict ? window.__cinedheuGetDict() : null;
+      btn.textContent = latestT?.rel_copy || "Copy";
     }, 1800);
   } catch (_) {
     // Clipboard unavailable
   }
+});
+
+document.querySelectorAll(".preview-toggle__btn").forEach((btn) => {
+  btn.addEventListener("click", () => {
+    const target = btn.getAttribute("data-preview-target");
+    document.querySelectorAll(".preview-toggle__btn").forEach((b) => {
+      const active = b === btn;
+      b.classList.toggle("is-active", active);
+      b.setAttribute("aria-selected", active ? "true" : "false");
+    });
+    document.querySelectorAll("[data-preview-panel]").forEach((panel) => {
+      const show = panel.getAttribute("data-preview-panel") === target;
+      panel.hidden = !show;
+      panel.style.display = show ? "flex" : "none";
+    });
+  });
 });
 
 document.querySelectorAll(".qr-toggle__btn").forEach((btn) => {
