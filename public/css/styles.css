@@ -523,6 +523,12 @@ h1 {
   margin-bottom: 14px;
 }
 
+.icon-badge svg {
+  width: 20px;
+  height: 20px;
+  display: block;
+}
+
 .glass-card h3 {
   font-size: 1.05rem;
   font-weight: 700;
