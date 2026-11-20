@@ -1252,6 +1252,7 @@ Object.keys(PAGE_EXTRAS).forEach((langCode) => {
 });
 
 window.__cinedheuGetDict = () => TRANSLATIONS[document.documentElement.lang] || TRANSLATIONS.en;
+window.__cinedheuReapplyLanguage = () => applyLanguage(document.documentElement.lang || "en");
 
 function applyLanguage(lang) {
   const code = TRANSLATIONS[lang] ? lang : "en";
@@ -1260,10 +1261,20 @@ function applyLanguage(lang) {
   document.documentElement.lang = code;
   document.documentElement.dir = code === "ar" ? "rtl" : "ltr";
 
+  const liveTag = window.__cinedheuLatestTag;
+  const liveSize = window.__cinedheuLatestSize;
+
   document.querySelectorAll("[data-i18n]").forEach((el) => {
     const key = el.getAttribute("data-i18n");
     if (key && dict[key]) {
-      el.textContent = dict[key];
+      let text = dict[key];
+      if (liveTag && (key === "hero_pill" || key === "bench_heading" || key === "bench_col_cinedheu")) {
+        text = text.replace(/v\d+\.\d+\.\d+/g, liveTag);
+      }
+      if (liveSize && key === "bench_r6_cd") {
+        text = text.replace(/\d+(?:\.\d+)?\s*(?:MB|Mo|GB)/gi, liveSize);
+      }
+      el.textContent = text;
     }
   });
 

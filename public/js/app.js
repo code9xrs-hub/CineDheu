@@ -47,14 +47,27 @@ async function loadLatestRelease() {
     const downloadUrl = apkAsset?.browser_download_url || FALLBACK_DOWNLOAD_URL;
     setDownloadHref(downloadUrl);
 
-    const versionPill = document.getElementById("hero-version-pill");
-    if (versionPill) versionPill.textContent = `Latest ${tag} • Android 8.0+`;
+    window.__cinedheuLatestTag = tag;
+    const formattedSize = apkAsset?.size ? formatBytes(apkAsset.size) : null;
+    if (formattedSize) {
+      window.__cinedheuLatestSize = formattedSize;
+    }
+
+    if (typeof window.__cinedheuReapplyLanguage === "function") {
+      window.__cinedheuReapplyLanguage();
+    } else {
+      const versionPill = document.getElementById("hero-version-pill");
+      if (versionPill) versionPill.textContent = `Latest ${tag} • Android 8.0+`;
+    }
 
     const metaVersion = document.getElementById("meta-version");
     if (metaVersion) metaVersion.textContent = tag;
 
     const metaSize = document.getElementById("meta-size");
-    if (metaSize && apkAsset?.size) metaSize.textContent = formatBytes(apkAsset.size);
+    if (metaSize && formattedSize) metaSize.textContent = formattedSize;
+
+    const benchApkSize = document.getElementById("bench-apk-size");
+    if (benchApkSize && formattedSize) benchApkSize.textContent = formattedSize;
 
     const releaseTitle = document.getElementById("release-title");
     if (releaseTitle) releaseTitle.textContent = release.name || `CineDheu ${tag}`;
