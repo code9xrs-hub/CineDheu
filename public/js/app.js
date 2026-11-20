@@ -4,7 +4,7 @@ const LATEST_RELEASE_API = `https://api.github.com/repos/${GITHUB_OWNER}/${GITHU
 const FALLBACK_DOWNLOAD_URL = `https://github.com/${GITHUB_OWNER}/${GITHUB_REPO}/releases/latest/download/app-release.apk`;
 
 function formatBytes(bytes) {
-  if (!bytes || bytes <= 0) return "~4.77 MB";
+  if (!bytes || bytes <= 0) return "~4.59 MB";
   const mb = bytes / (1024 * 1024);
   return mb >= 1024 ? `${(mb / 1024).toFixed(2)} GB` : `${mb.toFixed(2)} MB`;
 }
@@ -37,7 +37,7 @@ async function loadLatestRelease() {
     if (!res.ok) throw new Error(`HTTP ${res.status}`);
     const release = await res.json();
 
-    const tag = release.tag_name || "v1.0.3";
+    const tag = release.tag_name || "v1.0.4";
     const assets = Array.isArray(release.assets) ? release.assets : [];
     const apkAsset =
       assets.find((a) => a.name === "app-release.apk") ||

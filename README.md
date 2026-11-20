@@ -28,20 +28,20 @@ A lightweight, native Android OTT streaming and offline media app crafted with a
 | :--- | :--- |
 | **App Name** | CineDheu |
 | **Platform** | Android 8.0+ (Mobile, Android TV, Google TV & Fire TV) |
-| **Latest Version** | `v1.0.3` (`versionCode 4`) |
-| **Download Format** | Signed Release APK (`app-release.apk`, ~4.77 MB) |
+| **Latest Version** | `v1.0.4` (`versionCode 5`) |
+| **Download Format** | Signed Release APK (`app-release.apk`, ~4.59 MB) |
 | **Account / Login** | Not required (100% private, zero account tracking) |
-| **AI Assistant** | Built-in **Dheu AI** with animated mascot ears, voice typing & 19-category app guide |
+| **AI Assistant** | Built-in **Dheu AI** (Gemma 4) with natural general-purpose chat, typing animations & 19-category app guide |
 | **Updates** | Built-in OTA updater via GitHub Releases (Stable & Beta channels) |
 
 ---
 
-## What's New in v1.0.3
-- **Mobile + Android TV & Fire TV in One APK**: Automatic TV detection (`LEANBACK_LAUNCHER` + TV Navigation Rail + adaptive 5/6-column grids + overscan margins + smooth zoom-in D-pad remote focus) while keeping Mobile UI 100% unchanged.
-- **Google Cast SDK Integration**: Cast movies and series to Chromecast / Google TV devices with auto-connect, remote Play/Pause/Seek controls, and seamless local playback resume on disconnect.
-- **Offline App Data Backup & Restore**: Export and import Watchlist, Continue Watching, Search History, and Preferences locally as `cinedheu_backup_YYYY-MM-DD.json` with Safe Merge duplicate prevention.
-- **Player & AI Polish**: Perfectly round red seek bar thumb centered on the progress track, playful randomized ear animations on Dheu AI across Home & AI Chat, and AES-256-GCM encrypted `BuildConfig` URLs/keys.
-- **Performance Optimization**: Memory-pressure Coil cache trimming (`onTrimMemory`), OkHttp connection pooling, Hero Carousel focus-aware auto-slide pause, and `contentType` recycling on grids.
+## What's New in v1.0.4
+- **API-Driven Languages & Genres + Coverflow Hero Carousel**: Two dedicated filter buttons (**Languages** & **Genres**) directly below the topbar open a full-screen scrollable selection overlay (Mobile & Android TV synced) and route into the See More catalogue. The Hero Slider now features a clean poster-only Coverflow card carousel populated dynamically from the first item of each home section (excluding Recently Updated & Upcoming).
+- **Watch by OTT, View Counts & Community Verdict**: Browse titles by OTT platform (**Netflix**, **Prime**, **JioHotstar**, **SonyLiv**, etc.), see live poster view counts (`Eye` icon + views), and view **Community Verdict** scores & vote counts on title details.
+- **Dheu AI Upgraded to Gemma 4 (`@cf/google/gemma-4-26b-a4b-it`)**: Behaves as a natural general-purpose conversational assistant strictly following user intent (never forcing movie/series suggestions unless asked), with a 3-dot animated typing indicator and progressive text reveal.
+- **18+ Content Toggle & Expanded Player Gestures**: Direct **Show 18+ Adult Sections** toggle on the main Settings page, automatic silent background catalogue refresh, plus **Horizontal Swipe to Seek**, **Single-Tap Toggle Controls**, **Long-Press 2x Speed Boost**, and **Double-Tap Seek Step** (`5s`–`30s`) under Player Gestures.
+- **Cleaner Player & Performance Boost**: Permanently removed Miracast/ScreenCast from the player, replaced seek HUD emojis with crisp Material icons, and optimized Hero/OTT image decoding (`600×900` / `96×96`) and `TRIM_MEMORY_BACKGROUND` cache trimming.
 
 ---
 
@@ -81,18 +81,18 @@ A lightweight, native Android OTT streaming and offline media app crafted with a
 ## Comparison & Benchmark
 
 <p align="center">
-  <img src="public/assets/benchmark-chart.svg" alt="CineDheu v1.0.3 vs MovieLinkBD vs MovieBox Comparison & Benchmark" width="100%" />
+  <img src="public/assets/benchmark-chart.svg" alt="CineDheu v1.0.4 vs MovieLinkBD vs MovieBox Comparison & Benchmark" width="100%" />
 </p>
 
-| Feature | CineDheu v1.0.3 | MovieLinkBD | MovieBox |
+| Feature | CineDheu v1.0.4 | MovieLinkBD | MovieBox |
 | :--- | :--- | :--- | :--- |
 | **Mobile + Android TV & Fire TV Remote** | Yes (Adaptive Rail + D-Pad Zoom) | No | Partial |
-| **Google Cast SDK** | Yes (Auto-Connect + Remote Controls) | No | Basic |
+| **Watch by OTT, Views & Verdict** | Yes (OTT Rail + Views + Community Verdict) | Partial | No |
 | **Offline Backup & Restore (JSON)** | Yes (Export + Safe Merge Import) | No | Account Cloud Only |
-| **Dheu AI App Assistant & Voice** | Yes (Mascot + 19-Category Guide, EN & BN) | No | No |
-| **Smart Preload & PiP** | Up to 5 min buffer + PiP | Basic | Standard |
+| **Dheu AI Assistant (Gemma 4) & Voice** | Yes (General AI + 19-Category Guide, EN & BN) | No | No |
+| **Smart Preload, Gestures & PiP** | Up to 5 min buffer + 2x Long-Press + PiP | Basic | Standard |
 | **Ad-Free & Zero Accounts** | 100% Ad-Free | Ad-Supported | Ads / Prompts |
-| **Signed APK Size** | `~4.77 MB` (`4,997,748` bytes) | — | Larger Bundle |
+| **Signed APK Size** | `~4.59 MB` (`4,811,420` bytes) | — | Larger Bundle |
 | **Verified OTA Updates** | SHA-256 + Signing Cert Check | Manual | Manual |
 
 ---
