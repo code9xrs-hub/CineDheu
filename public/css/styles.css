@@ -460,6 +460,175 @@ h1 {
   gap: 6px;
 }
 
+.mock-circle--ai {
+  background: radial-gradient(circle at 35% 35%, rgba(229, 9, 54, 0.55), rgba(229, 9, 54, 0.16));
+  border: 1px solid rgba(229, 9, 54, 0.55);
+}
+
+.mock-filter-row {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.mock-filter-pill {
+  display: inline-flex;
+  align-items: center;
+  gap: 3px;
+  padding: 4px 9px;
+  border-radius: 999px;
+  border: 1px solid rgba(255, 255, 255, 0.48);
+  color: #ffffff;
+  font-size: 0.62rem;
+  font-weight: 600;
+  line-height: 1;
+}
+
+.mock-filter-pill--tv {
+  font-size: 0.56rem;
+  padding: 3px 8px;
+}
+
+.mock-chevron {
+  width: 10px;
+  height: 10px;
+  flex-shrink: 0;
+}
+
+.mock-coverflow {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 6px;
+  overflow: hidden;
+  padding: 2px 0;
+}
+
+.mock-cf-card {
+  border-radius: 14px;
+  aspect-ratio: 2 / 3;
+  flex-shrink: 0;
+  border: 1px solid rgba(255, 255, 255, 0.12);
+}
+
+.mock-cf-card--center {
+  width: 112px;
+  background: linear-gradient(155deg, rgba(229, 9, 54, 0.55), #252b40 48%, #10131d);
+  box-shadow: 0 10px 26px rgba(0, 0, 0, 0.55), 0 0 22px rgba(229, 9, 54, 0.25);
+  z-index: 2;
+}
+
+.mock-cf-card--side {
+  width: 72px;
+  opacity: 0.58;
+  transform: scale(0.88);
+}
+
+.mock-cf-card--left {
+  background: linear-gradient(155deg, #2b344d, #141824);
+}
+
+.mock-cf-card--right {
+  background: linear-gradient(155deg, #3a2334, #151722);
+}
+
+.mock-ott-row {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  overflow: hidden;
+}
+
+.mock-ott-chip {
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+  padding: 3px 7px;
+  border-radius: 7px;
+  background: rgba(255, 255, 255, 0.06);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  font-size: 0.54rem;
+  font-weight: 600;
+  color: var(--text-primary);
+  white-space: nowrap;
+}
+
+.mock-ott-dot {
+  width: 7px;
+  height: 7px;
+  border-radius: 2px;
+  flex-shrink: 0;
+}
+
+.mock-ott-dot--red { background: #e50914; }
+.mock-ott-dot--blue { background: #00a8e1; }
+.mock-ott-dot--gold { background: #f59e0b; }
+.mock-ott-dot--purple { background: #8b5cf6; }
+
+.mock-views {
+  position: absolute;
+  right: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  display: inline-flex;
+  align-items: center;
+  gap: 2px;
+  padding: 2px 4px;
+  border-radius: 5px 0 0 5px;
+  background: rgba(8, 9, 13, 0.78);
+  color: #ffffff;
+  font-size: 0.5rem;
+  font-weight: 600;
+  line-height: 1;
+}
+
+.mock-eye-icon {
+  width: 8px;
+  height: 8px;
+  color: var(--text-secondary);
+  flex-shrink: 0;
+}
+
+.tv-coverflow {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  overflow: hidden;
+}
+
+.tv-cf-card {
+  border-radius: 10px;
+  aspect-ratio: 2 / 3;
+  flex-shrink: 0;
+  border: 1px solid rgba(255, 255, 255, 0.12);
+}
+
+.tv-cf-card--center {
+  width: 58px;
+  background: linear-gradient(155deg, rgba(229, 9, 54, 0.55), #252b40 48%, #10131d);
+}
+
+.tv-cf-card--focused {
+  transform: scale(1.06);
+  box-shadow: 0 8px 20px rgba(229, 9, 54, 0.35);
+  border-color: rgba(229, 9, 54, 0.55);
+}
+
+.tv-cf-card--side {
+  width: 44px;
+  opacity: 0.58;
+  transform: scale(0.88);
+}
+
+.tv-cf-card--left {
+  background: linear-gradient(155deg, #2b344d, #141824);
+}
+
+.tv-cf-card--right {
+  background: linear-gradient(155deg, #3a2334, #151722);
+}
+
 /* Android TV Frame Mockup */
 .tv-frame {
   width: 100%;

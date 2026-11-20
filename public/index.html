@@ -40,7 +40,7 @@
     href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
     rel="stylesheet"
   />
-  <link rel="stylesheet" href="css/styles.css?v=20261120a" />
+  <link rel="stylesheet" href="css/styles.css?v=20261121a" />
 </head>
 <body>
   <div class="ambient-glow ambient-glow--top" aria-hidden="true"></div>
@@ -185,7 +185,7 @@
           </div>
 
           <div class="preview-stage">
-            <!-- Mobile Preview -->
+            <!-- Mobile Preview (v1.0.4 UI) -->
             <div class="preview-panel" data-preview-panel="mobile">
               <div class="phone-frame" aria-hidden="true">
                 <div class="phone-notch"></div>
@@ -196,29 +196,47 @@
                       <span>CineDheu</span>
                     </span>
                     <div class="mock-icons">
-                      <span class="mock-circle"></span>
+                      <span class="mock-circle mock-circle--ai"></span>
                       <span class="mock-circle"></span>
                     </div>
                   </div>
-                  <div class="mock-hero-card">
-                    <div class="mock-hero-badge" data-i18n="mock_featured">FEATURED • 4K / 1080p</div>
-                    <div class="mock-hero-title" data-i18n="mock_hero_title">Stream Without Limits</div>
-                    <div class="mock-hero-sub" data-i18n="mock_hero_sub">Multi-Audio • Subtitles • Offline Ready</div>
-                    <div class="mock-hero-cta">
-                      <svg class="mock-inline-icon" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><polygon points="6 4 20 12 6 20 6 4" /></svg>
-                      <span data-i18n="mock_play">Play Now</span>
-                    </div>
+
+                  <div class="mock-filter-row">
+                    <span class="mock-filter-pill">
+                      <span data-i18n="mock_filter_languages">Languages</span>
+                      <svg class="mock-chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4"><polyline points="6 9 12 15 18 9" /></svg>
+                    </span>
+                    <span class="mock-filter-pill">
+                      <span data-i18n="mock_filter_genres">Genres</span>
+                      <svg class="mock-chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4"><polyline points="6 9 12 15 18 9" /></svg>
+                    </span>
                   </div>
+
+                  <div class="mock-coverflow">
+                    <div class="mock-cf-card mock-cf-card--side mock-cf-card--left"></div>
+                    <div class="mock-cf-card mock-cf-card--center"></div>
+                    <div class="mock-cf-card mock-cf-card--side mock-cf-card--right"></div>
+                  </div>
+
+                  <div class="mock-ott-row">
+                    <span class="mock-ott-chip"><span class="mock-ott-dot mock-ott-dot--red"></span>Netflix</span>
+                    <span class="mock-ott-chip"><span class="mock-ott-dot mock-ott-dot--blue"></span>Prime</span>
+                    <span class="mock-ott-chip"><span class="mock-ott-dot mock-ott-dot--gold"></span>Hotstar</span>
+                  </div>
+
                   <div class="mock-section-title" data-i18n="mock_trending">Trending Now</div>
                   <div class="mock-row">
                     <div class="mock-poster">
                       <span class="mock-rating"><svg class="mock-star-icon" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2" /></svg> 8.9</span>
+                      <span class="mock-views"><svg class="mock-eye-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M2 12s3.5-7 10-7 10 7 10 7-3.5 7-10 7-10-7-10-7Z" /><circle cx="12" cy="12" r="3" /></svg>15.0K</span>
                     </div>
                     <div class="mock-poster mock-poster--alt">
                       <span class="mock-rating"><svg class="mock-star-icon" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2" /></svg> 8.6</span>
+                      <span class="mock-views"><svg class="mock-eye-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M2 12s3.5-7 10-7 10 7 10 7-3.5 7-10 7-10-7-10-7Z" /><circle cx="12" cy="12" r="3" /></svg>9.4K</span>
                     </div>
                     <div class="mock-poster mock-poster--dark">
                       <span class="mock-rating"><svg class="mock-star-icon" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2" /></svg> 9.1</span>
+                      <span class="mock-views"><svg class="mock-eye-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M2 12s3.5-7 10-7 10 7 10 7-3.5 7-10 7-10-7-10-7Z" /><circle cx="12" cy="12" r="3" /></svg>12.2K</span>
                     </div>
                   </div>
                   <div class="mock-bottom-nav">
@@ -231,7 +249,7 @@
               </div>
             </div>
 
-            <!-- Android TV Preview -->
+            <!-- Android TV Preview (v1.0.4 UI) -->
             <div class="preview-panel" data-preview-panel="tv" hidden>
               <div class="tv-frame" aria-hidden="true">
                 <div class="tv-screen">
@@ -248,8 +266,8 @@
                     <span class="tv-rail__item" title="Watchlist">
                       <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="m19 21-7-4-7 4V5a2 2 0 0 1 2-2h10a2 2 0 0 1 2 2v16z" /></svg>
                     </span>
-                    <span class="tv-rail__item" title="Cast">
-                      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M2 8V6a2 2 0 0 1 2-2h16a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2h-6" /><path d="M2 12a9 9 0 0 1 8 8" /><path d="M2 16a5 5 0 0 1 4 4" /></svg>
+                    <span class="tv-rail__item" title="Downloads">
+                      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4" /><polyline points="7 10 12 15 17 10" /><line x1="12" x2="12" y1="15" y2="3" /></svg>
                     </span>
                     <span class="tv-rail__item" title="Settings">
                       <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="3" /><path d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 0 1-2.83 2.83l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 0 1-4 0v-.09A1.65 1.65 0 0 0 9 19.4a1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 0 1-2.83-2.83l.06-.06A1.65 1.65 0 0 0 4.68 15a1.65 1.65 0 0 0-1.51-1H3a2 2 0 0 1 0-4h.09A1.65 1.65 0 0 0 4.6 9a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 0 1 2.83-2.83l.06.06A1.65 1.65 0 0 0 9 4.68a1.65 1.65 0 0 0 1-1.51V3a2 2 0 0 1 4 0v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 0 1 2.83 2.83l-.06.06A1.65 1.65 0 0 0 19.4 9a1.65 1.65 0 0 0 1.51 1H21a2 2 0 0 1 0 4h-.09a1.65 1.65 0 0 0-1.51 1z" /></svg>
@@ -257,23 +275,39 @@
                   </aside>
 
                   <div class="tv-content">
-                    <div class="tv-hero-banner">
-                      <div class="mock-hero-badge" data-i18n="mock_featured">FEATURED • 4K / 1080p</div>
-                      <div class="tv-hero-title" data-i18n="mock_hero_title">Stream Without Limits</div>
-                      <div class="mock-hero-sub" data-i18n="mock_hero_sub">Multi-Audio • Subtitles • Offline Ready</div>
-                      <div class="mock-hero-cta tv-cta-focused">
-                        <svg class="mock-inline-icon" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><polygon points="6 4 20 12 6 20 6 4" /></svg>
-                        <span data-i18n="mock_play">Play Now</span>
-                      </div>
+                    <div class="mock-filter-row">
+                      <span class="mock-filter-pill mock-filter-pill--tv">
+                        <span data-i18n="mock_filter_languages">Languages</span>
+                        <svg class="mock-chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4"><polyline points="6 9 12 15 18 9" /></svg>
+                      </span>
+                      <span class="mock-filter-pill mock-filter-pill--tv">
+                        <span data-i18n="mock_filter_genres">Genres</span>
+                        <svg class="mock-chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4"><polyline points="6 9 12 15 18 9" /></svg>
+                      </span>
+                    </div>
+
+                    <div class="tv-coverflow">
+                      <div class="tv-cf-card tv-cf-card--side tv-cf-card--left"></div>
+                      <div class="tv-cf-card tv-cf-card--center tv-cf-card--focused"></div>
+                      <div class="tv-cf-card tv-cf-card--side tv-cf-card--right"></div>
+                    </div>
+
+                    <div class="mock-ott-row">
+                      <span class="mock-ott-chip"><span class="mock-ott-dot mock-ott-dot--red"></span>Netflix</span>
+                      <span class="mock-ott-chip"><span class="mock-ott-dot mock-ott-dot--blue"></span>Prime</span>
+                      <span class="mock-ott-chip"><span class="mock-ott-dot mock-ott-dot--gold"></span>Hotstar</span>
+                      <span class="mock-ott-chip"><span class="mock-ott-dot mock-ott-dot--purple"></span>SonyLiv</span>
                     </div>
 
                     <div class="mock-section-title" data-i18n="mock_trending">Trending Now</div>
                     <div class="tv-poster-grid">
                       <div class="tv-poster tv-poster--focused">
                         <span class="mock-rating"><svg class="mock-star-icon" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2" /></svg> 9.2</span>
+                        <span class="mock-views"><svg class="mock-eye-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M2 12s3.5-7 10-7 10 7 10 7-3.5 7-10 7-10-7-10-7Z" /><circle cx="12" cy="12" r="3" /></svg>15.7K</span>
                       </div>
                       <div class="tv-poster mock-poster--alt">
                         <span class="mock-rating"><svg class="mock-star-icon" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2" /></svg> 8.8</span>
+                        <span class="mock-views"><svg class="mock-eye-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M2 12s3.5-7 10-7 10 7 10 7-3.5 7-10 7-10-7-10-7Z" /><circle cx="12" cy="12" r="3" /></svg>8.1K</span>
                       </div>
                       <div class="tv-poster mock-poster--dark">
                         <span class="mock-rating"><svg class="mock-star-icon" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2" /></svg> 8.7</span>
@@ -689,8 +723,8 @@
     </div>
   </footer>
 
-  <script src="js/i18n.js?v=20261120a"></script>
-  <script src="js/app.js?v=20261120a"></script>
+  <script src="js/i18n.js?v=20261121a"></script>
+  <script src="js/app.js?v=20261121a"></script>
 </body>
 </html>
 
