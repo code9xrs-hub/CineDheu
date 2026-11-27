@@ -1,4 +1,4 @@
-﻿<div align="center">
+<div align="center">
 
 <img src="public/assets/cinedheu-logo.svg" alt="CineDheu App Logo" width="110" />
 
@@ -37,11 +37,11 @@ A lightweight, native Android OTT streaming and offline media app crafted with a
 ---
 
 ## What's New in v1.0.5
-- **Dheu AI Screenshot Search (Gemma 4 Vision)**: Upload any Movie, TV Series, or Anime screenshot directly in Dheu AI chat. Gemma 4 (`@cf/google/gemma-4-26b-a4b-it`) analyzes scenes, characters, and text, searches the CineDheu catalog, and shows clickable results with posters and release years.
-- **Upgraded Dheu AI Chat UI**: Replaced the three-dot typing indicator with a pulsing glowing Dheu AI mascot and redesigned suggestion cards with uniform heights, golden star ratings, and poster fallbacks.
-- **Inline Download Progress & Dynamic Episode Status**: Movie and episode download icons now display live circular percentage progress with tap-to-pause/resume, plus dynamic episode status icons (checkmark when downloaded locally, pause, or failure warning).
-- **Redesigned Settings & Telegram Channel**: Clean grouped Settings layout with live Offline Library & Continue Watching counters, **CineDheu Updates** Telegram link, and **Data Saver Mode** (`480p` cap on mobile data).
-- **Streaming Stability & Network Recovery**: Media3 Adaptive Bitrate Streaming, automatic retry with exponential backoff, seamless playback position recovery on network reconnect, transient `502`/`503`/`504` API retry, and updated `code9xstudio` API endpoint.
+- **Dheu AI Screenshot Search:** Upload a movie, series, or anime screenshot to identify it with Gemma 4 Vision and open its details.
+- **Upgraded Dheu AI Chat UI:** Pulsing Dheu AI mascot typing indicator and uniform suggestion cards with star ratings.
+- **Live Download Progress & Status Icons:** Real-time circular progress with tap-to-pause/resume plus checkmark, pause, and error icons on episodes.
+- **Redesigned Settings & Telegram Link:** Grouped Settings UI with Offline & Continue Watching counters, **CineDheu Updates** Telegram link, and **Data Saver Mode** (480p on mobile data).
+- **Smoother Streaming & Recovery:** Adaptive bitrate streaming, auto-retry with position recovery on reconnect, and `code9xstudio` API reliability fixes.
 
 ---
 
