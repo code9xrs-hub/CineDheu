@@ -144,6 +144,30 @@ a {
   gap: 10px;
 }
 
+.topbar__star {
+  gap: 6px;
+}
+
+.topbar__star-icon {
+  width: 15px;
+  height: 15px;
+  flex-shrink: 0;
+}
+
+.topbar__star-count {
+  padding-left: 6px;
+  border-left: 1px solid rgba(255, 255, 255, 0.16);
+  color: #fbbf24;
+  font-weight: 700;
+  font-variant-numeric: tabular-nums;
+}
+
+@media (max-width: 520px) {
+  .topbar__star-label {
+    display: none;
+  }
+}
+
 .lang-select {
   appearance: none;
   background: var(--surface-elevated);
