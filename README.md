@@ -1,4 +1,4 @@
-<div align="center">
+﻿<div align="center">
 
 <img src="public/assets/cinedheu-logo.svg" alt="CineDheu App Logo" width="110" />
 
@@ -28,7 +28,7 @@ A lightweight, native Android OTT streaming and offline media app crafted with a
 | :--- | :--- |
 | **App Name** | CineDheu |
 | **Platform** | Android 8.0+ (Mobile, Android TV, Google TV & Fire TV) |
-| **Latest Version** | `v1.0.4` (`versionCode 5`) |
+| **Latest Version** | `v1.0.5` (`versionCode 6`) |
 | **Download Format** | Signed Release APK (`app-release.apk`, ~4.59 MB) |
 | **Account / Login** | Not required (100% private, zero account tracking) |
 | **AI Assistant** | Built-in **Dheu AI** (Gemma 4) with natural general-purpose chat, typing animations & 19-category app guide |
@@ -36,7 +36,7 @@ A lightweight, native Android OTT streaming and offline media app crafted with a
 
 ---
 
-## What's New in v1.0.4
+## What's New in v1.0.5
 - **API-Driven Languages & Genres + Coverflow Hero Carousel**: Two dedicated filter buttons (**Languages** & **Genres**) directly below the topbar open a full-screen scrollable selection overlay (Mobile & Android TV synced) and route into the See More catalogue. The Hero Slider now features a clean poster-only Coverflow card carousel populated dynamically from the first item of each home section (excluding Recently Updated & Upcoming).
 - **Watch by OTT, View Counts & Community Verdict**: Browse titles by OTT platform (**Netflix**, **Prime**, **JioHotstar**, **SonyLiv**, etc.), see live poster view counts (`Eye` icon + views), and view **Community Verdict** scores & vote counts on title details.
 - **Dheu AI Upgraded to Gemma 4 (`@cf/google/gemma-4-26b-a4b-it`)**: Behaves as a natural general-purpose conversational assistant strictly following user intent (never forcing movie/series suggestions unless asked), with a 3-dot animated typing indicator and progressive text reveal.
@@ -81,10 +81,10 @@ A lightweight, native Android OTT streaming and offline media app crafted with a
 ## Comparison & Benchmark
 
 <p align="center">
-  <img src="public/assets/benchmark-chart.svg" alt="CineDheu v1.0.4 vs MovieLinkBD vs MovieBox Comparison & Benchmark" width="100%" />
+  <img src="public/assets/benchmark-chart.svg" alt="CineDheu v1.0.5 vs MovieLinkBD vs MovieBox Comparison & Benchmark" width="100%" />
 </p>
 
-| Feature | CineDheu v1.0.4 | MovieLinkBD | MovieBox |
+| Feature | CineDheu v1.0.5 | MovieLinkBD | MovieBox |
 | :--- | :--- | :--- | :--- |
 | **Mobile + Android TV & Fire TV Remote** | Yes (Adaptive Rail + D-Pad Zoom) | No | Partial |
 | **Watch by OTT, Views & Verdict** | Yes (OTT Rail + Views + Community Verdict) | Partial | No |
