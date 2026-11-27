@@ -1,4 +1,4 @@
-﻿const GITHUB_OWNER = "code9xrs-hub";
+const GITHUB_OWNER = "code9xrs-hub";
 const GITHUB_REPO = "CineDheu";
 const REPO_API = `https://api.github.com/repos/${GITHUB_OWNER}/${GITHUB_REPO}`;
 const LATEST_RELEASE_API = `${REPO_API}/releases/latest`;
@@ -80,7 +80,7 @@ async function loadLatestRelease() {
       const notesList = document.getElementById("release-notes");
       const lines = release.body
         .split(/\r?\n/)
-        .map((line) => line.replace(/^[-*]\s*/, "").trim())
+        .map((line) => line.replace(/^[-*]\s*/, "").replace(/\*\*/g, "").trim())
         .filter((line) => line.length > 0 && !line.startsWith("#"));
       if (notesList && lines.length > 0) {
         notesList.innerHTML = "";
