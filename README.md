@@ -37,11 +37,11 @@ A lightweight, native Android OTT streaming and offline media app crafted with a
 ---
 
 ## What's New in v1.0.5
-- **Dheu AI Screenshot Search:** Upload a movie, series, or anime screenshot to identify it with Gemma 4 Vision and open its details.
-- **Upgraded Dheu AI Chat UI:** Pulsing Dheu AI mascot typing indicator and uniform suggestion cards with star ratings.
-- **Live Download Progress & Status Icons:** Real-time circular progress with tap-to-pause/resume plus checkmark, pause, and error icons on episodes.
-- **Redesigned Settings & Telegram Link:** Grouped Settings UI with Offline & Continue Watching counters, **CineDheu Updates** Telegram link, and **Data Saver Mode** (480p on mobile data).
-- **Smoother Streaming & Recovery:** Adaptive bitrate streaming, auto-retry with position recovery on reconnect, and `code9xstudio` API reliability fixes.
+- **Dheu AI Screenshot Search** (Gemma 4 Vision)
+- **Pulsing Dheu AI mascot** & redesigned suggestion cards
+- **Live circular download progress** & episode status icons
+- **Redesigned Settings**, Data Saver Mode & Telegram link
+- **Adaptive streaming** & auto network recovery
 
 ---
 
