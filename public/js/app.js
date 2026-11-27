@@ -34,6 +34,7 @@ async function loadLatestRelease() {
   try {
     const res = await fetch(LATEST_RELEASE_API, {
       headers: { Accept: "application/vnd.github+json" },
+      cache: "no-store",
     });
     if (!res.ok) throw new Error(`HTTP ${res.status}`);
     const release = await res.json();
@@ -76,20 +77,39 @@ async function loadLatestRelease() {
     const releaseDate = document.getElementById("release-date");
     if (releaseDate) releaseDate.textContent = formatDate(release.published_at);
 
+    let noteLines = [];
     if (release.body) {
-      const notesList = document.getElementById("release-notes");
-      const lines = release.body
+      noteLines = release.body
         .split(/\r?\n/)
         .map((line) => line.replace(/^[-*]\s*/, "").replace(/\*\*/g, "").trim())
         .filter((line) => line.length > 0 && !line.startsWith("#"));
-      if (notesList && lines.length > 0) {
-        notesList.innerHTML = "";
-        lines.slice(0, 6).forEach((line) => {
-          const li = document.createElement("li");
-          li.textContent = line;
-          notesList.appendChild(li);
-        });
+    }
+
+    if (noteLines.length === 0) {
+      const jsonAsset = assets.find((a) => a.name === "release.json");
+      if (jsonAsset?.browser_download_url) {
+        try {
+          const rjRes = await fetch(jsonAsset.browser_download_url, { cache: "no-store" });
+          if (rjRes.ok) {
+            const rj = await rjRes.json();
+            if (Array.isArray(rj.releaseNotes)) {
+              noteLines = rj.releaseNotes.map((n) => String(n).trim()).filter(Boolean);
+            }
+          }
+        } catch (_) {
+          // Ignore release.json fallback error
+        }
       }
+    }
+
+    const notesList = document.getElementById("release-notes");
+    if (notesList && noteLines.length > 0) {
+      notesList.innerHTML = "";
+      noteLines.slice(0, 6).forEach((line) => {
+        const li = document.createElement("li");
+        li.textContent = line;
+        notesList.appendChild(li);
+      });
     }
 
     const digest = apkAsset?.digest?.replace(/^sha256:/i, "");
@@ -179,5 +199,6 @@ async function loadRepoStats() {
 
 loadLatestRelease();
 loadRepoStats();
+setInterval(loadLatestRelease, 60000);
 setInterval(loadRepoStats, 60000);
 
