@@ -1,6 +1,7 @@
 ﻿const GITHUB_OWNER = "code9xrs-hub";
 const GITHUB_REPO = "CineDheu";
-const LATEST_RELEASE_API = `https://api.github.com/repos/${GITHUB_OWNER}/${GITHUB_REPO}/releases/latest`;
+const REPO_API = `https://api.github.com/repos/${GITHUB_OWNER}/${GITHUB_REPO}`;
+const LATEST_RELEASE_API = `${REPO_API}/releases/latest`;
 const FALLBACK_DOWNLOAD_URL = `https://github.com/${GITHUB_OWNER}/${GITHUB_REPO}/releases/latest/download/app-release.apk`;
 
 function formatBytes(bytes) {
@@ -152,5 +153,31 @@ document.querySelectorAll(".qr-toggle__btn").forEach((btn) => {
   });
 });
 
+function formatStarCount(count) {
+  if (typeof count !== "number" || Number.isNaN(count)) return "★ —";
+  if (count >= 1000) return `★ ${(count / 1000).toFixed(1).replace(/\.0$/, "")}k`;
+  return `★ ${count.toLocaleString()}`;
+}
+
+async function loadRepoStats() {
+  const starsEl = document.getElementById("meta-stars");
+  if (!starsEl) return;
+  try {
+    const res = await fetch(REPO_API, {
+      headers: { Accept: "application/vnd.github+json" },
+      cache: "no-store",
+    });
+    if (!res.ok) return;
+    const repo = await res.json();
+    if (typeof repo.stargazers_count === "number") {
+      starsEl.textContent = formatStarCount(repo.stargazers_count);
+    }
+  } catch (_) {
+    // Keep fallback if rate-limited or offline
+  }
+}
+
 loadLatestRelease();
+loadRepoStats();
+setInterval(loadRepoStats, 60000);
 
