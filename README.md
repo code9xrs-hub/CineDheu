@@ -37,11 +37,11 @@ A lightweight, native Android OTT streaming and offline media app crafted with a
 ---
 
 ## What's New in v1.0.5
-- **API-Driven Languages & Genres + Coverflow Hero Carousel**: Two dedicated filter buttons (**Languages** & **Genres**) directly below the topbar open a full-screen scrollable selection overlay (Mobile & Android TV synced) and route into the See More catalogue. The Hero Slider now features a clean poster-only Coverflow card carousel populated dynamically from the first item of each home section (excluding Recently Updated & Upcoming).
-- **Watch by OTT, View Counts & Community Verdict**: Browse titles by OTT platform (**Netflix**, **Prime**, **JioHotstar**, **SonyLiv**, etc.), see live poster view counts (`Eye` icon + views), and view **Community Verdict** scores & vote counts on title details.
-- **Dheu AI Upgraded to Gemma 4 (`@cf/google/gemma-4-26b-a4b-it`)**: Behaves as a natural general-purpose conversational assistant strictly following user intent (never forcing movie/series suggestions unless asked), with a 3-dot animated typing indicator and progressive text reveal.
-- **18+ Content Toggle & Expanded Player Gestures**: Direct **Show 18+ Adult Sections** toggle on the main Settings page, automatic silent background catalogue refresh, plus **Horizontal Swipe to Seek**, **Single-Tap Toggle Controls**, **Long-Press 2x Speed Boost**, and **Double-Tap Seek Step** (`5s`–`30s`) under Player Gestures.
-- **Cleaner Player & Performance Boost**: Permanently removed Miracast/ScreenCast from the player, replaced seek HUD emojis with crisp Material icons, and optimized Hero/OTT image decoding (`600×900` / `96×96`) and `TRIM_MEMORY_BACKGROUND` cache trimming.
+- **Dheu AI Screenshot Search (Gemma 4 Vision)**: Upload any Movie, TV Series, or Anime screenshot directly in Dheu AI chat. Gemma 4 (`@cf/google/gemma-4-26b-a4b-it`) analyzes scenes, characters, and text, searches the CineDheu catalog, and shows clickable results with posters and release years.
+- **Upgraded Dheu AI Chat UI**: Replaced the three-dot typing indicator with a pulsing glowing Dheu AI mascot and redesigned suggestion cards with uniform heights, golden star ratings, and poster fallbacks.
+- **Inline Download Progress & Dynamic Episode Status**: Movie and episode download icons now display live circular percentage progress with tap-to-pause/resume, plus dynamic episode status icons (checkmark when downloaded locally, pause, or failure warning).
+- **Redesigned Settings & Telegram Channel**: Clean grouped Settings layout with live Offline Library & Continue Watching counters, **CineDheu Updates** Telegram link, and **Data Saver Mode** (`480p` cap on mobile data).
+- **Streaming Stability & Network Recovery**: Media3 Adaptive Bitrate Streaming, automatic retry with exponential backoff, seamless playback position recovery on network reconnect, transient `502`/`503`/`504` API retry, and updated `code9xstudio` API endpoint.
 
 ---
 
